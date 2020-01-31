@@ -1,0 +1,35 @@
+Script started on Wednesday 01 January 2003 12:12:19 AM IST
+]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c17/cs232/3101s4c1@lab2-AcerPower-Series:~/ceccs18c17/cs232/3101$ gedit unsorted.txt
+]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c17/cs232/3101s4c1@lab2-AcerPower-Series:~/ceccs18c17/cs232/3101$ sort -n unsorted.txt
+
+2
+3
+4
+5
+7
+9
+]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c17/cs232/3101s4c1@lab2-AcerPower-Series:~/ceccs18c17/cs232/3101$ sort -n[Krnk7 unsorted [K.txt
+9
+7
+5
+4
+3
+2
+
+]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c17/cs232/3101s4c1@lab2-AcerPower-Series:~/ceccs18c17/cs232/3101$ gedit abc.txt
+]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c17/cs232/3101s4c1@lab2-AcerPower-Series:~/ceccs18c17/cs232/3101$ cut -f3 unsorted.txt[K[K[K[K[K[K[K[K[K[K[K[Kabc.txt
+o
+]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c17/cs232/3101s4c1@lab2-AcerPower-Series:~/ceccs18c17/cs232/3101$ gedit a.txt
+]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c17/cs232/3101s4c1@lab2-AcerPower-Series:~/ceccs18c17/cs232/3101$ gedit b.txt
+]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c17/cs232/3101s4c1@lab2-AcerPower-Series:~/ceccs18c17/cs232/3101$ paste a.txt b.txt
+1	a
+2	b
+3	c
+4	d
+5	e
+	
+]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c17/cs232/3101s4c1@lab2-AcerPower-Series:~/ceccs18c17/cs232/3101$ gedit abe.txt
+]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c17/cs232/3101s4c1@lab2-AcerPower-Series:~/ceccs18c17/cs232/3101$ grep "eo" abe.txt
+g[01;31m[Keo[m[Krge
+]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c17/cs232/3101s4c1@lab2-AcerPower-Series:~/ceccs18c17/cs232/3101$ exit
+Script done on Wednesday 01 January 2003 12:25:50 AM IST
