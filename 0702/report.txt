@@ -63,7 +63,9 @@ Command/Shell script/Program name
 ---------------------------------
 	
 	sftp cs18c17@192.168.0.30
-	put report.txt
+	lcd ..
+        lpwd
+        put report.txt
 	rm report.txt
 	quit
 
@@ -74,13 +76,21 @@ sftp cs18c17@192.168.0.30
     
     connect to host 192.168.0.30 via sftp
 
+lcd ..
+    
+    change local directory 
+
+lpwd
+
+    show local present working directory
+
 put report.txt
-          
-	   upload report.txt
+         
+    upload report.txt
 
 rm report.txt 
          
-	 remove report.txt from host
+    remove report.txt from host
 
 quit
 
