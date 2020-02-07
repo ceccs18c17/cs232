@@ -46,11 +46,11 @@ Command/Shell script/Program name
 --------------------------------
 Output: 
 
-ssh cs18c47@192.168.0.30, is used to open a secured connection to remote device
+ssh cs18c17@192.168.0.30, is used to open a secured connection to remote device
 	
-rsync -av 2701/ test/, is used to sync the files across 2701/ and test/ 
+rsync -av 2701/ test/, is used to sync the files across 0702/ and test/ 
 	
-scp report.txt cs18c47@192.168.0.30:2701, this is used to upload report.txt to 2701/ in the host 192.168.0.30
+scp report.txt cs18c17@192.168.0.30:2701, this is used to upload report.txt to 0702/ in the host 192.168.0.30
 
 -------------------
 
@@ -62,7 +62,7 @@ scp report.txt cs18c47@192.168.0.30:2701, this is used to upload report.txt to 2
 Command/Shell script/Program name
 ---------------------------------
 	
-	sftp cs18c47@192.168.0.30
+	sftp cs18c17@192.168.0.30
 	put report.txt
 	rm report.txt
 	quit
@@ -70,7 +70,7 @@ Command/Shell script/Program name
 --------------------------------
 Output: or Input & Output (whichever is applicable)
 
-sftp cs18c47@192.168.0.30
+sftp cs18c17@192.168.0.30
     
     connect to host 192.168.0.30 via sftp
 
