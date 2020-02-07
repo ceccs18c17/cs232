@@ -64,10 +64,7 @@ Command/Shell script/Program name
 	
 	sftp cs18c47@192.168.0.30
 	put report.txt
-	lcd ..
-	lpwd
-	get work.txt
-	rm work.txt
+	rm report.txt
 	quit
 
 --------------------------------
@@ -83,7 +80,7 @@ put report.txt
 
 rm report.txt 
          
-	 remove work.txt from host
+	 remove report.txt from host
 
 quit
 
