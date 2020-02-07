@@ -26,11 +26,11 @@ route -n
 	
 route add default gw 192.168.0.2 
    
-    add a default gateway 
+    Add a default gateway 
 
 echo "nameserver 1.1.1.1" >> /etc/resolv.conf
 
-    to add 1.1.1.1 to system domain resolver configuration
+    To add 1.1.1.1 to system domain resolver configuration
 
 ------------------------------------
 #2:Networking tasks (t4)
@@ -80,23 +80,23 @@ Output: or Input & Output (whichever is applicable)
 
 sftp cs18c17@192.168.0.30
     
-    connect to host 192.168.0.30 via sftp
+    Connect to host 192.168.0.30 via sftp
 
 lcd ..
     
-    change local directory 
+    Change local directory 
 
 lpwd
 
-    show local present working directory
+    Show local present working directory
 
 put report.txt
          
-    upload report.txt
+    Upload report.txt
 
 rm report.txt 
          
-    remove report.txt from host
+    Remove report.txt from host
 
 quit
 
