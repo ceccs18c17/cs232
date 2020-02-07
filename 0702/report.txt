@@ -33,7 +33,7 @@ echo "nameserver 1.1.1.1" >> /etc/resolv.conf
     to add 1.1.1.1 to system domain resolver configuration
 
 ------------------------------------
-#3:Networking tasks (t4)
+#2:Networking tasks (t4)
 ---------------------------------
 
 Command/Shell script/Program name
@@ -56,7 +56,7 @@ scp report.txt cs18c17@192.168.0.30:2701, this is used to upload report.txt to 0
 
 
 
-#2: Ftp usage (t5)
+#3: Ftp usage (t5)
 
 ---------------------------------
 Command/Shell script/Program name
