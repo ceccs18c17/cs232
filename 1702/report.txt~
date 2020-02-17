@@ -1,0 +1,27 @@
+CEC CS 18 C17 07-02-2020
+George Mani
+
+--------------------------------
+#1: SCRIPTING TASK (t2)
+---------------------------------
+
+Command/Shell script/Program name
+---------------------------------
+	
+	script.sh
+
+Input: 
+---------------
+> result_CHN.pdf - Semester result of students
+
+> students.txt - Student list with corresponding KTU reg.no
+
+
+--------------------------------
+Output: 
+
+	cgpa.txt
+
+
+-------------------
+Remarks if any:
