@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Translational//EN">
+<html>
+<head>
+<title>cs18c17</title>
+</head>
+<body>
+	<div align="center">
+		<p>S4C CS232 <b>Free and Open Source Software Lab</p>
+		<br>
+		<br>
+		<p>Home page of cs18c17 Sample</b></p>
+		<br>
+		<table width="100%" cellspacing="2" cellpadding="2" border="1">
+			<tbody>
+				<tr>
+					<td valign="top">
+						<b>No.</b>
+						<br>
+					</td>
+					<td valign="top">
+						<b>Code Link</b>
+						<br>
+					</td>
+					<td valign="top">
+						<b>Date of Upload</b>
+						<br>
+					</td>
+					<td valign="top">
+						<b>Description/Link</b>
+						<br>
+					</td>			
+					<td valign="top">
+						<b>Result/Link</b>
+						<br>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top">
+						<p>1</p>
+						<br>
+					</td>
+					<td valign="top">
+						<p><a href="/cs18c/cs18c17/3101/work.txt">work.txt</a></p>
+						<br>
+					</td>
+					<td valign="top">
+						<p>31/01</p>
+						<br>
+					</td>
+					<td valign="top">
+						<p><a href="/cs18c/cs18c17/3101/report.txt">report.txt</a></p>
+						<br>
+					</td>			
+					<td valign="top">
+						<p></p>
+						<br>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top">
+						<p>2</p>
+						<br>
+					</td>
+					<td valign="top">
+						<p><a href="/cs18c/cs18c17/0702/work.txt">work.txt</a></p>
+						<br>
+					</td>
+					<td valign="top">
+						<p>07/02</p>
+						<br>
+					</td>
+					<td valign="top">
+						<p><a href="/cs18c/cs18c17/0702/report.txt">report.txt</a></p>
+						<br>
+					</td>			
+					<td valign="top">
+						<p></p>
+						<br>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top">
+						<p>3</p>
+						<br>
+					</td>
+					<td valign="top">
+						<p><a href="/cs18c/cs18c17/1702/s1/work.txt">work.txt</a></p>
+						<br>
+					</td>
+					<td valign="top">
+						<p>17/02</p>
+						<br>
+					</td>
+					<td valign="top">
+						<p><a href="/cs18c/cs18c17/1702/report.txt">report.txt</a></p>
+						<br>
+					</td>			
+					<td valign="top">
+						<p><a href="/cs18c/cs18c17/1702/s1/cgpa.txt">S1 CGPA</a>		<br>
+					   <br>			
+						<a href="/cs18c/cs18c17/1702/s2/cgpa.txt">S2 CGPA</a>
+						</p>
+						<br>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top">
+						<p>4</p>
+						<br>
+					</td>
+					<td valign="top">
+						<p><a href="/cs18c/cs18c17/2802/work.txt">work.txt</a></p>
+						<br>
+					</td>
+					<td valign="top">
+						<p>28/02</p>
+						<br>
+					</td>
+					<td valign="top">
+						<p><a href="/cs18c/cs18c17/2802/report.txt">report.txt</a></p>
+						<br>
+					</td>			
+					<td valign="top">
+						<p></p>
+						<br>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+</body>
+</html>

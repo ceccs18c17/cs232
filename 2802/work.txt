@@ -1,0 +1,61 @@
+Script started on Friday 28 February 2020 11:37:18 AM IST
+]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c17/cs232/2802s4c1@lab2-AcerPower-Series:~/ceccs18c17/cs232/2802$ sftp cs18c51@192.168.0.3043@192.168.0.30cd 2402[Kcs232[K[K[K[K[K[K[K[Kgedit index.tml
+]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c17/cs232/2802s4c1@lab2-AcerPower-Series:~/ceccs18c17/cs232/2802$ gedit index.tmlhtml
+]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c17/cs232/2802s4c1@lab2-AcerPower-Series:~/ceccs18c17/cs232/2802$ free
+             total       used       free     shared    buffers     cached
+Mem:       1017424     928112      89312          0      19428     382128
+-/+ buffers/cache:     526556     490868
+Swap:      1037308      32916    1004392
+]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c17/cs232/2802s4c1@lab2-AcerPower-Series:~/ceccs18c17/cs232/2802$ ifconfid[Kg b-[K[K-a
+eth0      Link encap:Ethernet  HWaddr 00:19:db:31:b9:d0  
+          inet addr:192.168.0.201  Bcast:192.168.0.255  Mask:255.255.255.0
+          inet6 addr: fe80::219:dbff:fe31:b9d0/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:242529 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:8777 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:21550435 (21.5 MB)  TX bytes:1945384 (1.9 MB)
+          Interrupt:18 
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:36 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:36 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:1924 (1.9 KB)  TX bytes:1924 (1.9 KB)
+
+]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c17/cs232/2802s4c1@lab2-AcerPower-Series:~/ceccs18c17/cs232/2802$ df
+Filesystem     1K-blocks    Used Available Use% Mounted on
+/dev/sda1      157156172 2983776 146166204   3% /
+udev              499228       4    499224   1% /dev
+tmpfs             101744     816    100928   1% /run
+none                5120       0      5120   0% /run/lock
+none              508712     224    508488   1% /run/shm
+]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c17/cs232/2802s4c1@lab2-AcerPower-Series:~/ceccs18c17/cs232/2802$ dfifconfig -a[K[K[K[K[K[K[K[K[K[K[Ksftp [K[K[K[K[Kfreegedit index.html[1Ptmlsftp cs18c51@192.168.0.30
+.
+              |
+.  .    . .-. | .-..-. .--.--. .-.
+ \  \  / (.-' |(  (   )|  |  |(.-'
+  `' `'   `--'` `-'`-' '  '  ` `--'
+cs18c51@192.168.0.30's password: 
+
+
+Permission denied, please try again.
+cs18c51@192.168.0.30's password: 
+]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c17/cs232/2802s4c1@lab2-AcerPower-Series:~/ceccs18c17/cs232/2802$ sftp cs18c51@192.168.0.30[C[C[1P@192.168.0.30[1P@192.168.0.301@192.168.0.307@192.168.0.30
+.
+              |
+.  .    . .-. | .-..-. .--.--. .-.
+ \  \  / (.-' |(  (   )|  |  |(.-'
+  `' `'   `--'` `-'`-' '  '  ` `--'
+cs18c17@192.168.0.30's password: 
+Connected to 192.168.0.30.
+sftp> g[Kls
+0702                1702                3101                examples.desktop    
+newf                
+sftp> exit
+]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c17/cs232/2802s4c1@lab2-AcerPower-Series:~/ceccs18c17/cs232/2802$ gedit report.txt
+]0;s4c1@lab2-AcerPower-Series: ~/ceccs18c17/cs232/2802s4c1@lab2-AcerPower-Series:~/ceccs18c17/cs232/2802$ exit
+Script done on Friday 28 February 2020 11:50:41 AM IST

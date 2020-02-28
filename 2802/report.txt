@@ -1,0 +1,21 @@
+CEC CS 18 17
+George Mani
+ip:196.168.0.201
+Mac:00:19:db:31:b9:d0
+
+--------------------------------
+#1: Create a webpage in server (t9)
+---------------------------------
+Command/Shell script/Program name
+
+Program Name : index.html
+---------------------------------
+Output: or Input & Output (whichever is applicable)
+
+Webpage : 
+
+http://192.168.0.30/cs18c/cs18c17
+
+--------------------------------
+
+
