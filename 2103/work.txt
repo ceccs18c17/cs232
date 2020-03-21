@@ -1,0 +1,303 @@
+Script started on 2020-03-21 13:32:39+0530
+]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/2103[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/2103[00m$ sudo-apt get update
+sudo-apt: command not found
+]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/2103[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/2103[00m$ sudo-apt get update[1P[1@ [C[C[C[C[1P[1@-
+[sudo] password for george: 
+0% [Working]            Hit:1 http://in.archive.ubuntu.com/ubuntu bionic InRelease
+0% [Connecting to security.ubuntu.com]0% [1 InRelease gpgv 242 kB] [Waiting for headers] [Connecting to security.ubun                                                                               Hit:2 http://in.archive.ubuntu.com/ubuntu bionic-updates InRelease
+0% [1 InRelease gpgv 242 kB] [Waiting for headers] [Connecting to security.ubun                                                                               Hit:3 http://in.archive.ubuntu.com/ubuntu bionic-backports InRelease
+                                                                               0% [1 InRelease gpgv 242 kB] [Connecting to security.ubuntu.com]                                                                0% [Connecting to security.ubuntu.com (2001:67c:1360:8001::23)]0% [2 InRelease gpgv 88.7 kB] [Connecting to security.ubuntu.com (2001:67c:1360                                                                               0% [Connecting to security.ubuntu.com (2001:67c:1360:8001::23)]0% [3 InRelease gpgv 74.6 kB] [Connecting to security.ubuntu.com (2001:67c:1360                                                                               0% [Waiting for headers]                        Get:4 http://security.ubuntu.com/ubuntu bionic-security InRelease [88.7 kB]
+0% [4 InRelease 899 B/88.7 kB 1%]0% [4 InRelease 22.6 kB/88.7 kB 26%]0% [4 InRelease 73.4 kB/88.7 kB 83%]                                    0% [Working]0% [4 InRelease gpgv 88.7 kB]                             100% [Working]              Fetched 88.7 kB in 2s (37.5 kB/s)
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 3%Reading package lists... 3%Reading package lists... 5%Reading package lists... 5%Reading package lists... 7%Reading package lists... 7%Reading package lists... 7%Reading package lists... 7%Reading package lists... 7%Reading package lists... 7%Reading package lists... 7%Reading package lists... 7%Reading package lists... 32%Reading package lists... 32%Reading package lists... 44%Reading package lists... 56%Reading package lists... 56%Reading package lists... 69%Reading package lists... 69%Reading package lists... 70%Reading package lists... 70%Reading package lists... 70%Reading package lists... 70%Reading package lists... 70%Reading package lists... 70%Reading package lists... 73%Reading package lists... 73%Reading package lists... 75%Reading package lists... 75%Reading package lists... 77%Reading package lists... 77%Reading package lists... 78%Reading package lists... 78%Reading package lists... 78%Reading package lists... 78%Reading package lists... 78%Reading package lists... 78%Reading package lists... 82%Reading package lists... 82%Reading package lists... 85%Reading package lists... 85%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 90%Reading package lists... 90%Reading package lists... 91%Reading package lists... 91%Reading package lists... 93%Reading package lists... 93%Reading package lists... 93%Reading package lists... 93%Reading package lists... 93%Reading package lists... 93%Reading package lists... 93%Reading package lists... 93%Reading package lists... 95%Reading package lists... 95%Reading package lists... 98%Reading package lists... 98%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/2103[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/2103[00m$ sudo apt-get install apache [K2
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 3%Reading package lists... 3%Reading package lists... 5%Reading package lists... 5%Reading package lists... 7%Reading package lists... 7%Reading package lists... 7%Reading package lists... 7%Reading package lists... 7%Reading package lists... 7%Reading package lists... 7%Reading package lists... 7%Reading package lists... 32%Reading package lists... 32%Reading package lists... 44%Reading package lists... 56%Reading package lists... 56%Reading package lists... 69%Reading package lists... 69%Reading package lists... 70%Reading package lists... 70%Reading package lists... 70%Reading package lists... 70%Reading package lists... 70%Reading package lists... 70%Reading package lists... 73%Reading package lists... 73%Reading package lists... 75%Reading package lists... 75%Reading package lists... 77%Reading package lists... 77%Reading package lists... 78%Reading package lists... 78%Reading package lists... 78%Reading package lists... 78%Reading package lists... 78%Reading package lists... 78%Reading package lists... 82%Reading package lists... 82%Reading package lists... 85%Reading package lists... 85%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 90%Reading package lists... 90%Reading package lists... 91%Reading package lists... 91%Reading package lists... 93%Reading package lists... 93%Reading package lists... 93%Reading package lists... 93%Reading package lists... 93%Reading package lists... 93%Reading package lists... 93%Reading package lists... 93%Reading package lists... 95%Reading package lists... 95%Reading package lists... 98%Reading package lists... 98%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... 63%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+The following additional packages will be installed:
+  apache2-bin apache2-data apache2-utils libapr1 libaprutil1
+  libaprutil1-dbd-sqlite3 libaprutil1-ldap liblua5.2-0
+Suggested packages:
+  apache2-doc apache2-suexec-pristine | apache2-suexec-custom
+The following NEW packages will be installed:
+  apache2 apache2-bin apache2-data apache2-utils libapr1 libaprutil1
+  libaprutil1-dbd-sqlite3 libaprutil1-ldap liblua5.2-0
+0 upgraded, 9 newly installed, 0 to remove and 82 not upgraded.
+Need to get 1,712 kB of archives.
+After this operation, 6,921 kB of additional disk space will be used.
+Do you want to continue? [Y/n] Y
+0% [Working]            Get:1 http://in.archive.ubuntu.com/ubuntu bionic/main amd64 libapr1 amd64 1.6.3-2 [90.9 kB]
+0% [1 libapr1 2,390 B/90.9 kB 3%]                                 6% [Working]            Get:2 http://in.archive.ubuntu.com/ubuntu bionic/main amd64 libaprutil1 amd64 1.6.1-2 [84.4 kB]
+7% [2 libaprutil1 1,062 B/84.4 kB 1%]                                     13% [Waiting for headers]                         Get:3 http://in.archive.ubuntu.com/ubuntu bionic/main amd64 libaprutil1-dbd-sqlite3 amd64 1.6.1-2 [10.6 kB]
+13% [3 libaprutil1-dbd-sqlite3 73 B/10.6 kB 1%]                                               15% [Working]             Get:4 http://in.archive.ubuntu.com/ubuntu bionic/main amd64 libaprutil1-ldap amd64 1.6.1-2 [8,764 B]
+15% [4 libaprutil1-ldap 1,133 B/8,764 B 13%]                                            18% [Waiting for headers]                         Get:5 http://in.archive.ubuntu.com/ubuntu bionic/main amd64 liblua5.2-0 amd64 5.2.4-1.1build1 [108 kB]
+18% [5 liblua5.2-0 70 B/108 kB 0%]                                  25% [Working]             Get:6 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 apache2-bin amd64 2.4.29-1ubuntu4.13 [1,070 kB]
+25% [6 apache2-bin 263 B/1,070 kB 0%]37% [6 apache2-bin 249 kB/1,070 kB 23%]49% [6 apache2-bin 514 kB/1,070 kB 48%]66% [6 apache2-bin 872 kB/1,070 kB 81%]                                       78% [Working]             Get:7 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 apache2-utils amd64 2.4.29-1ubuntu4.13 [83.8 kB]
+78% [7 apache2-utils 1,458 B/83.8 kB 2%]                                        84% [Waiting for headers]                         Get:8 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 apache2-data all 2.4.29-1ubuntu4.13 [160 kB]
+84% [8 apache2-data 3,073 B/160 kB 2%]                                      93% [Waiting for headers]                         Get:9 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 apache2 amd64 2.4.29-1ubuntu4.13 [95.1 kB]
+93% [9 apache2 3,302 B/95.1 kB 3%]                                  100% [Working]              Fetched 1,712 kB in 3s (493 kB/s)
+Selecting previously unselected package libapr1:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 127416 files and directories currently installed.)
+Preparing to unpack .../0-libapr1_1.6.3-2_amd64.deb ...
+Unpacking libapr1:amd64 (1.6.3-2) ...
+Selecting previously unselected package libaprutil1:amd64.
+Preparing to unpack .../1-libaprutil1_1.6.1-2_amd64.deb ...
+Unpacking libaprutil1:amd64 (1.6.1-2) ...
+Selecting previously unselected package libaprutil1-dbd-sqlite3:amd64.
+Preparing to unpack .../2-libaprutil1-dbd-sqlite3_1.6.1-2_amd64.deb ...
+Unpacking libaprutil1-dbd-sqlite3:amd64 (1.6.1-2) ...
+Selecting previously unselected package libaprutil1-ldap:amd64.
+Preparing to unpack .../3-libaprutil1-ldap_1.6.1-2_amd64.deb ...
+Unpacking libaprutil1-ldap:amd64 (1.6.1-2) ...
+Selecting previously unselected package liblua5.2-0:amd64.
+Preparing to unpack .../4-liblua5.2-0_5.2.4-1.1build1_amd64.deb ...
+Unpacking liblua5.2-0:amd64 (5.2.4-1.1build1) ...
+Selecting previously unselected package apache2-bin.
+Preparing to unpack .../5-apache2-bin_2.4.29-1ubuntu4.13_amd64.deb ...
+Unpacking apache2-bin (2.4.29-1ubuntu4.13) ...
+Selecting previously unselected package apache2-utils.
+Preparing to unpack .../6-apache2-utils_2.4.29-1ubuntu4.13_amd64.deb ...
+Unpacking apache2-utils (2.4.29-1ubuntu4.13) ...
+Selecting previously unselected package apache2-data.
+Preparing to unpack .../7-apache2-data_2.4.29-1ubuntu4.13_all.deb ...
+Unpacking apache2-data (2.4.29-1ubuntu4.13) ...
+Selecting previously unselected package apache2.
+Preparing to unpack .../8-apache2_2.4.29-1ubuntu4.13_amd64.deb ...
+Unpacking apache2 (2.4.29-1ubuntu4.13) ...
+Setting up libapr1:amd64 (1.6.3-2) ...
+Setting up apache2-data (2.4.29-1ubuntu4.13) ...
+Setting up libaprutil1:amd64 (1.6.1-2) ...
+Setting up liblua5.2-0:amd64 (5.2.4-1.1build1) ...
+Setting up libaprutil1-ldap:amd64 (1.6.1-2) ...
+Setting up libaprutil1-dbd-sqlite3:amd64 (1.6.1-2) ...
+Setting up apache2-utils (2.4.29-1ubuntu4.13) ...
+Setting up apache2-bin (2.4.29-1ubuntu4.13) ...
+Setting up apache2 (2.4.29-1ubuntu4.13) ...
+Enabling module mpm_event.
+Enabling module authz_core.
+Enabling module authz_host.
+Enabling module authn_core.
+Enabling module auth_basic.
+Enabling module access_compat.
+Enabling module authn_file.
+Enabling module authz_user.
+Enabling module alias.
+Enabling module dir.
+Enabling module autoindex.
+Enabling module env.
+Enabling module mime.
+Enabling module negotiation.
+Enabling module setenvif.
+Enabling module filter.
+Enabling module deflate.
+Enabling module status.
+Enabling module reqtimeout.
+Enabling conf charset.
+Enabling conf localized-error-pages.
+Enabling conf other-vhosts-access-log.
+Enabling conf security.
+Enabling conf serve-cgi-bin.
+Enabling site 000-default.
+Created symlink /etc/systemd/system/multi-user.target.wants/apache2.service → /lib/systemd/system/apache2.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/apache-htcacheclean.service → /lib/systemd/system/apache-htcacheclean.service.
+Processing triggers for libc-bin (2.27-3ubuntu1) ...
+Processing triggers for systemd (237-3ubuntu10.33) ...
+Processing triggers for man-db (2.8.3-2ubuntu0.1) ...
+Processing triggers for ufw (0.36-0ubuntu0.18.04.1) ...
+Processing triggers for ureadahead (0.100.0-21) ...
+ureadahead will be reprofiled on next reboot
+]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/2103[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/2103[00m$ hostnamw[Ke -I
+192.168.42.220 2409:4073:397:6af:3d23:98cf:6d90:9bab 2409:4073:397:6af:c18f:4ce8:7423:94f5 
+]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/2103[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/2103[00m$ sudo gedo[Kit /var/www/index.html
+
+** (gedit:3560): [1;33mWARNING[0m **: [34m13:36:14.227[0m: Set document metadata failed: Setting attribute metadata::gedit-position not supported
+]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/2103[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/2103[00m$ sudo gedit /var/www/index.htmlhindex.html [A]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/2103[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/2103[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ctindex.htmll[A]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/2103[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/2103[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmindex.html[A]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/2103[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/2103[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Clindex.html[A]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/2103[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/2103[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/index.html[A]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/2103[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/2103[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+
+** (gedit:3621): [1;33mWARNING[0m **: [34m13:42:44.147[0m: Set document metadata failed: Setting attribute metadata::gedit-spell-language not supported
+
+** (gedit:3621): [1;33mWARNING[0m **: [34m13:42:44.148[0m: Set document metadata failed: Setting attribute metadata::gedit-encoding not supported
+
+** (gedit:3621): [1;33mWARNING[0m **: [34m13:43:46.853[0m: Set document metadata failed: Setting attribute metadata::gedit-spell-language not supported
+
+** (gedit:3621): [1;33mWARNING[0m **: [34m13:43:46.853[0m: Set document metadata failed: Setting attribute metadata::gedit-encoding not supported
+
+** (gedit:3621): [1;33mWARNING[0m **: [34m13:44:00.180[0m: Set document metadata failed: Setting attribute metadata::gedit-spell-language not supported
+
+** (gedit:3621): [1;33mWARNING[0m **: [34m13:44:00.181[0m: Set document metadata failed: Setting attribute metadata::gedit-encoding not supported
+
+** (gedit:3621): [1;33mWARNING[0m **: [34m13:44:01.837[0m: Set document metadata failed: Setting attribute metadata::gedit-position not supported
+]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/2103[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/2103[00m$ sudo gedit /var/www/html/index.hhtml[A]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/2103[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/2103[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pindex.html
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Khostname -I
+192.168.42.220 2409:4073:397:6af:3d23:98cf:6d90:9bab 2409:4073:397:6af:c18f:4ce8:7423:94f5 
+]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/2103[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/2103[00m$ hostname -Isudo gedit /var/www/html/index.hhtml
+
+** (gedit:4010): [1;33mWARNING[0m **: [34m13:46:01.647[0m: Set document metadata failed: Setting attribute metadata::gedit-spell-language not supported
+
+** (gedit:4010): [1;33mWARNING[0m **: [34m13:46:01.648[0m: Set document metadata failed: Setting attribute metadata::gedit-encoding not supported
+
+** (gedit:4010): [1;33mWARNING[0m **: [34m13:46:02.046[0m: Set document metadata failed: Setting attribute metadata::gedit-spell-language not supported
+
+** (gedit:4010): [1;33mWARNING[0m **: [34m13:46:02.047[0m: Set document metadata failed: Setting attribute metadata::gedit-encoding not supported
+
+** (gedit:4010): [1;33mWARNING[0m **: [34m13:46:02.415[0m: Set document metadata failed: Setting attribute metadata::gedit-spell-language not supported
+
+** (gedit:4010): [1;33mWARNING[0m **: [34m13:46:02.415[0m: Set document metadata failed: Setting attribute metadata::gedit-encoding not supported
+
+** (gedit:4010): [1;33mWARNING[0m **: [34m13:46:03.736[0m: Set document metadata failed: Setting attribute metadata::gedit-position not supported
+]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/2103[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/2103[00m$ sudo gedit /var/www/html/index.hhtml
+
+** (gedit:4069): [1;33mWARNING[0m **: [34m13:51:41.613[0m: Set document metadata failed: Setting attribute metadata::gedit-spell-language not supported
+
+** (gedit:4069): [1;33mWARNING[0m **: [34m13:51:41.613[0m: Set document metadata failed: Setting attribute metadata::gedit-encoding not supported
+
+** (gedit:4069): [1;33mWARNING[0m **: [34m13:51:46.385[0m: Set document metadata failed: Setting attribute metadata::gedit-position not supported
+]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/2103[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/2103[00m$ sudo gedit /var/www/html/index.hhtml
+
+** (gedit:4141): [1;33mWARNING[0m **: [34m13:52:16.499[0m: Set document metadata failed: Setting attribute metadata::gedit-spell-language not supported
+
+** (gedit:4141): [1;33mWARNING[0m **: [34m13:52:16.500[0m: Set document metadata failed: Setting attribute metadata::gedit-encoding not supported
+
+** (gedit:4141): [1;33mWARNING[0m **: [34m13:52:17.313[0m: Set document metadata failed: Setting attribute metadata::gedit-position not supported
+]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/2103[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/2103[00m$ sudo gedit /var/www/html/index.hhtml
+
+** (gedit:4168): [1;33mWARNING[0m **: [34m14:01:47.019[0m: Set document metadata failed: Setting attribute metadata::gedit-spell-language not supported
+
+** (gedit:4168): [1;33mWARNING[0m **: [34m14:01:47.019[0m: Set document metadata failed: Setting attribute metadata::gedit-encoding not supported
+
+** (gedit:4168): [1;33mWARNING[0m **: [34m14:01:47.821[0m: Set document metadata failed: Setting attribute metadata::gedit-position not supported
+]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/2103[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/2103[00m$ sudo gedit /var/www/html/index.hhtml
+
+** (gedit:4380): [1;33mWARNING[0m **: [34m14:08:06.921[0m: Set document metadata failed: Setting attribute metadata::gedit-spell-language not supported
+
+** (gedit:4380): [1;33mWARNING[0m **: [34m14:08:06.921[0m: Set document metadata failed: Setting attribute metadata::gedit-encoding not supported
+
+** (gedit:4380): [1;33mWARNING[0m **: [34m14:08:07.972[0m: Set document metadata failed: Setting attribute metadata::gedit-position not supported
+]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/2103[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/2103[00m$ sudo gedit /var/www/html/index.hhtml
+
+** (gedit:4487): [1;33mWARNING[0m **: [34m14:24:55.619[0m: Set document metadata failed: Setting attribute metadata::gedit-spell-language not supported
+
+** (gedit:4487): [1;33mWARNING[0m **: [34m14:24:55.620[0m: Set document metadata failed: Setting attribute metadata::gedit-encoding not supported
+
+** (gedit:4487): [1;33mWARNING[0m **: [34m14:25:13.459[0m: Set document metadata failed: Setting attribute metadata::gedit-position not supported
+]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/2103[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/2103[00m$ sudo gedit /var/www/html/index.hhtml
+[sudo] password for george: 
+
+** (gedit:4991): [1;33mWARNING[0m **: [34m14:36:11.971[0m: Set document metadata failed: Setting attribute metadata::gedit-spell-language not supported
+
+** (gedit:4991): [1;33mWARNING[0m **: [34m14:36:11.971[0m: Set document metadata failed: Setting attribute metadata::gedit-encoding not supported
+
+** (gedit:4991): [1;33mWARNING[0m **: [34m14:37:15.141[0m: Set document metadata failed: Setting attribute metadata::gedit-spell-language not supported
+
+** (gedit:4991): [1;33mWARNING[0m **: [34m14:37:15.142[0m: Set document metadata failed: Setting attribute metadata::gedit-encoding not supported
+
+** (gedit:4991): [1;33mWARNING[0m **: [34m14:37:20.481[0m: Set document metadata failed: Setting attribute metadata::gedit-position not supported
+]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/2103[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/2103[00m$ sudo gedit /var/www/html/index.hhtml
+
+** (gedit:5017): [1;33mWARNING[0m **: [34m14:40:12.799[0m: Set document metadata failed: Setting attribute metadata::gedit-spell-language not supported
+
+** (gedit:5017): [1;33mWARNING[0m **: [34m14:40:12.800[0m: Set document metadata failed: Setting attribute metadata::gedit-encoding not supported
+
+** (gedit:5017): [1;33mWARNING[0m **: [34m14:40:17.893[0m: Set document metadata failed: Setting attribute metadata::gedit-spell-language not supported
+
+** (gedit:5017): [1;33mWARNING[0m **: [34m14:40:17.894[0m: Set document metadata failed: Setting attribute metadata::gedit-encoding not supported
+
+** (gedit:5017): [1;33mWARNING[0m **: [34m15:01:36.286[0m: Set document metadata failed: Setting attribute metadata::gedit-spell-language not supported
+
+** (gedit:5017): [1;33mWARNING[0m **: [34m15:01:36.287[0m: Set document metadata failed: Setting attribute metadata::gedit-encoding not supported
+
+** (gedit:5017): [1;33mWARNING[0m **: [34m15:01:37.236[0m: Set document metadata failed: Setting attribute metadata::gedit-position not supported
+]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/2103[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/2103[00m$ sudo gedit /var/www/html/index.hhtml
+[sudo] password for george: 
+
+** (gedit:5586): [1;33mWARNING[0m **: [34m15:04:59.930[0m: Set document metadata failed: Setting attribute metadata::gedit-spell-language not supported
+
+** (gedit:5586): [1;33mWARNING[0m **: [34m15:04:59.931[0m: Set document metadata failed: Setting attribute metadata::gedit-encoding not supported
+
+** (gedit:5586): [1;33mWARNING[0m **: [34m15:05:01.435[0m: Set document metadata failed: Setting attribute metadata::gedit-position not supported
+]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/2103[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/2103[00m$ sudo gedit /var/www/html/index.hhtml
+
+** (gedit:5622): [1;33mWARNING[0m **: [34m15:06:16.488[0m: Set document metadata failed: Setting attribute metadata::gedit-spell-language not supported
+
+** (gedit:5622): [1;33mWARNING[0m **: [34m15:06:16.489[0m: Set document metadata failed: Setting attribute metadata::gedit-encoding not supported
+
+** (gedit:5622): [1;33mWARNING[0m **: [34m15:06:31.532[0m: Set document metadata failed: Setting attribute metadata::gedit-spell-language not supported
+
+** (gedit:5622): [1;33mWARNING[0m **: [34m15:06:31.533[0m: Set document metadata failed: Setting attribute metadata::gedit-encoding not supported
+
+** (gedit:5622): [1;33mWARNING[0m **: [34m15:06:34.410[0m: Set document metadata failed: Setting attribute metadata::gedit-position not supported
+]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/2103[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/2103[00m$ sudo gedit /var/www/html/index.hhtml
+
+** (gedit:5643): [1;33mWARNING[0m **: [34m15:07:08.993[0m: Set document metadata failed: Setting attribute metadata::gedit-spell-language not supported
+
+** (gedit:5643): [1;33mWARNING[0m **: [34m15:07:08.994[0m: Set document metadata failed: Setting attribute metadata::gedit-encoding not supported
+
+** (gedit:5643): [1;33mWARNING[0m **: [34m15:07:12.896[0m: Set document metadata failed: Setting attribute metadata::gedit-spell-language not supported
+
+** (gedit:5643): [1;33mWARNING[0m **: [34m15:07:12.897[0m: Set document metadata failed: Setting attribute metadata::gedit-encoding not supported
+
+** (gedit:5643): [1;33mWARNING[0m **: [34m15:07:13.780[0m: Set document metadata failed: Setting attribute metadata::gedit-position not supported
+]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/2103[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/2103[00m$ sudo apt a[Kupdate
+[33m0% [Working][0m[33m0% [Connecting to in.archive.ubuntu.com] [Connecting to security.ubuntu.com][0m[33m                                                                            0% [Waiting for headers] [Waiting for headers][0m                                              Hit:1 http://in.archive.ubuntu.com/ubuntu bionic InRelease
+[33m                                              0% [Waiting for headers][0m[33m0% [1 InRelease gpgv 242 kB] [Waiting for headers] [Waiting for headers][0m[33m                                                                        0% [Waiting for headers] [Waiting for headers][0m                                              Hit:2 http://in.archive.ubuntu.com/ubuntu bionic-updates InRelease
+[33m0% [Waiting for headers] [Waiting for headers][0m[33m0% [2 InRelease gpgv 88.7 kB] [Waiting for headers] [Waiting for headers][0m                                                                         Get:3 http://security.ubuntu.com/ubuntu bionic-security InRelease [88.7 kB]
+[33m0% [2 InRelease gpgv 88.7 kB] [Waiting for headers] [3 InRelease 899 B/88.7 kB [0m[33m                                                                               0% [Waiting for headers] [3 InRelease 9,355 B/88.7 kB 11%][0m                                                          Hit:4 http://in.archive.ubuntu.com/ubuntu bionic-backports InRelease
+[33m                                                          0% [3 InRelease 11.8 kB/88.7 kB 13%][0m[33m0% [4 InRelease gpgv 74.6 kB] [3 InRelease 11.8 kB/88.7 kB 13%][0m[33m                                                               0% [3 InRelease 23.9 kB/88.7 kB 27%][0m[33m0% [3 InRelease 67.3 kB/88.7 kB 76%][0m[33m                                    0% [Working][0m[33m0% [3 InRelease gpgv 88.7 kB][0m[33m                             39% [Working][0m             Get:5 http://security.ubuntu.com/ubuntu bionic-security/main amd64 DEP-11 Metadata [38.6 kB]
+[33m40% [5 Components-amd64 2,209 B/38.6 kB 6%][0m[33m                                           48% [Working][0m[33m48% [5 Components-amd64 store 0 B] [Waiting for headers][0m[33m                                                        48% [Waiting for headers][0m[33m48% [Waiting for headers][0m                         Get:6 http://security.ubuntu.com/ubuntu bionic-security/main DEP-11 48x48 Icons [17.6 kB]
+[33m48% [6 icons-48x48 2,209 B/17.6 kB 13%][0m[33m                                       52% [Working][0m             Get:7 http://security.ubuntu.com/ubuntu bionic-security/main DEP-11 64x64 Icons [41.5 kB]
+[33m52% [7 icons-64x64 3,766 B/41.5 kB 9%][0m[33m52% [6 icons-48x48 store 0 B] [7 icons-64x64 3,766 B/41.5 kB 9%][0m[33m                                                                53% [7 icons-64x64 3,766 B/41.5 kB 9%][0m[33m                                      61% [Waiting for headers][0m                         Get:8 http://security.ubuntu.com/ubuntu bionic-security/universe amd64 DEP-11 Metadata [42.1 kB]
+[33m61% [8 Components-amd64 736 B/42.1 kB 2%][0m[33m61% [7 icons-64x64 store 0 B] [8 Components-amd64 736 B/42.1 kB 2%][0m[33m                                                                   61% [8 Components-amd64 736 B/42.1 kB 2%][0m[33m                                         71% [Working][0m             Get:9 http://security.ubuntu.com/ubuntu bionic-security/universe DEP-11 48x48 Icons [16.4 kB]
+[33m71% [9 icons-48x48 693 B/16.4 kB 4%][0m[33m71% [8 Components-amd64 store 0 B] [9 icons-48x48 693 B/16.4 kB 4%][0m[33m                                                                   72% [9 icons-48x48 7,941 B/16.4 kB 48%][0m[33m                                       74% [Waiting for headers][0m                         Get:10 http://security.ubuntu.com/ubuntu bionic-security/universe DEP-11 64x64 Icons [111 kB]
+[33m75% [10 icons-64x64 980 B/111 kB 1%][0m[33m75% [9 icons-48x48 store 0 B] [10 icons-64x64 980 B/111 kB 1%][0m[33m                                                              75% [10 icons-64x64 980 B/111 kB 1%][0m[33m                                    99% [Working][0m             Get:11 http://security.ubuntu.com/ubuntu bionic-security/multiverse amd64 DEP-11 Metadata [2,464 B]
+[33m100% [11 Components-amd64 1,907 B/2,464 B 77%][0m[33m100% [10 icons-64x64 store 0 B] [11 Components-amd64 1,907 B/2,464 B 77%][0m[33m                                                                         100% [10 icons-64x64 store 0 B][0m[33m                               100% [Working][0m[33m100% [11 Components-amd64 store 0 B][0m[33m                                    100% [Working][0m              Fetched 359 kB in 5s (70.3 kB/s)
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 3%Reading package lists... 3%Reading package lists... 5%Reading package lists... 5%Reading package lists... 7%Reading package lists... 7%Reading package lists... 7%Reading package lists... 7%Reading package lists... 7%Reading package lists... 7%Reading package lists... 7%Reading package lists... 7%Reading package lists... 32%Reading package lists... 32%Reading package lists... 41%Reading package lists... 56%Reading package lists... 56%Reading package lists... 69%Reading package lists... 69%Reading package lists... 69%Reading package lists... 69%Reading package lists... 70%Reading package lists... 70%Reading package lists... 70%Reading package lists... 70%Reading package lists... 73%Reading package lists... 73%Reading package lists... 75%Reading package lists... 75%Reading package lists... 77%Reading package lists... 77%Reading package lists... 78%Reading package lists... 78%Reading package lists... 78%Reading package lists... 78%Reading package lists... 78%Reading package lists... 78%Reading package lists... 82%Reading package lists... 82%Reading package lists... 85%Reading package lists... 85%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 89%Reading package lists... 89%Reading package lists... 91%Reading package lists... 91%Reading package lists... 93%Reading package lists... 93%Reading package lists... 93%Reading package lists... 93%Reading package lists... 93%Reading package lists... 93%Reading package lists... 93%Reading package lists... 93%Reading package lists... 95%Reading package lists... 95%Reading package lists... 98%Reading package lists... 98%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+82 packages can be upgraded. Run 'apt list --upgradable' to see them.
+]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/2103[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/2103[00m$ sudo apt-get install vsftpd
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 3%Reading package lists... 3%Reading package lists... 5%Reading package lists... 5%Reading package lists... 7%Reading package lists... 7%Reading package lists... 7%Reading package lists... 7%Reading package lists... 7%Reading package lists... 7%Reading package lists... 7%Reading package lists... 7%Reading package lists... 32%Reading package lists... 32%Reading package lists... 41%Reading package lists... 56%Reading package lists... 56%Reading package lists... 69%Reading package lists... 69%Reading package lists... 69%Reading package lists... 69%Reading package lists... 70%Reading package lists... 70%Reading package lists... 70%Reading package lists... 70%Reading package lists... 73%Reading package lists... 73%Reading package lists... 75%Reading package lists... 75%Reading package lists... 77%Reading package lists... 77%Reading package lists... 78%Reading package lists... 78%Reading package lists... 78%Reading package lists... 78%Reading package lists... 78%Reading package lists... 78%Reading package lists... 82%Reading package lists... 82%Reading package lists... 85%Reading package lists... 85%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 89%Reading package lists... 89%Reading package lists... 91%Reading package lists... 91%Reading package lists... 93%Reading package lists... 93%Reading package lists... 93%Reading package lists... 93%Reading package lists... 93%Reading package lists... 93%Reading package lists... 93%Reading package lists... 93%Reading package lists... 95%Reading package lists... 95%Reading package lists... 98%Reading package lists... 98%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... 80%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+The following NEW packages will be installed:
+  vsftpd
+0 upgraded, 1 newly installed, 0 to remove and 82 not upgraded.
+Need to get 115 kB of archives.
+After this operation, 334 kB of additional disk space will be used.
+0% [Working]            Get:1 http://in.archive.ubuntu.com/ubuntu bionic/main amd64 vsftpd amd64 3.0.3-9build1 [115 kB]
+1% [1 vsftpd 1,061 B/115 kB 1%]                               100% [Working]              Fetched 115 kB in 1s (219 kB/s)
+Preconfiguring packages ...
+Selecting previously unselected package vsftpd.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 128122 files and directories currently installed.)
+Preparing to unpack .../vsftpd_3.0.3-9build1_amd64.deb ...
+Unpacking vsftpd (3.0.3-9build1) ...
+Setting up vsftpd (3.0.3-9build1) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/vsftpd.service → /lib/systemd/system/vsftpd.service.
+Processing triggers for man-db (2.8.3-2ubuntu0.1) ...
+Processing triggers for ureadahead (0.100.0-21) ...
+Processing triggers for systemd (237-3ubuntu10.33) ...
+]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/2103[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/2103[00m$ sudo apt-get install vsftpd[12P updategedit /var/www/html/index.hhtml
+
+** (gedit:6507): [1;33mWARNING[0m **: [34m15:20:41.973[0m: Set document metadata failed: Setting attribute metadata::gedit-position not supported
+]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/2103[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/2103[00m$ sudo nano /etc/vsftpd.conf
+[?1049h[22;0;0t[1;24r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[22;33H(B[0;7m[ Reading File ](B[m[22;32H(B[0;7m[ Read 155 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                   /etc/vsftpd.conf                             [1;79H(B[m[23d(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Uncut Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[22d[3d[39;49m[36m# Example config file /etc/vsftpd.conf[4d#[5d# The default compiled in settings are fairly paranoid. This sample file[6d# loosens things up a bit, to make the ftp daemon more usable.[7d# Please see vsftpd.conf.5 for all compiled in defaults.[8d#[9d# READ THIS: This example file is NOT an exhaustive list of vsftpd options.[10d# Please read the vsftpd.conf.5 manual page to get a full idea of vsftpd's[11d# capabilities.[12d#[13d#[14d# Run standalone?  vsftpd can run either from an inetd or as a standalone[15d# daemon started from an initscript.[16d[39m(B[mlisten=NO[17d[36m#[18d# This directive enables listening on IPv6 sockets. By default, listening[19d# on the IPv6 "any" address (::) will accept connections from both IPv6[20d# and IPv4 clients. It is not necessary to listen on *both* IPv4 and IPv6[21d# sockets. If you want that (perhaps because you want to listen on specific[3d[39m(B[m[?12l[?25h[?25l[22d[J[24;80H[?12l[?25h[24;1H[?1049l[23;0;0t[?1l>]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/2103[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/2103[00m$ sudo gedit /etc/vsftpd.conf
+
+** (gedit:6521): [1;33mWARNING[0m **: [34m15:32:03.901[0m: Set document metadata failed: Setting attribute metadata::gedit-spell-language not supported
+
+** (gedit:6521): [1;33mWARNING[0m **: [34m15:32:03.902[0m: Set document metadata failed: Setting attribute metadata::gedit-encoding not supported
+
+** (gedit:6521): [1;33mWARNING[0m **: [34m15:32:06.244[0m: Set document metadata failed: Setting attribute metadata::gedit-position not supported
+]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/2103[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/2103[00m$ sudo gedit /etc/vsftpd.conf[1Pnano[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?1049h[22;0;0t[1;24r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[22;33H(B[0;7m[ Reading File ](B[m[22;32H(B[0;7m[ Read 155 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                   /etc/vsftpd.conf                             [1;79H(B[m[23d(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Uncut Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[22d[3d[39;49m[36m# Example config file /etc/vsftpd.conf[4d#[5d# The default compiled in settings are fairly paranoid. This sample file[6d# loosens things up a bit, to make the ftp daemon more usable.[7d# Please see vsftpd.conf.5 for all compiled in defaults.[8d#[9d# READ THIS: This example file is NOT an exhaustive list of vsftpd options.[10d# Please read the vsftpd.conf.5 manual page to get a full idea of vsftpd's[11d# capabilities.[12d#[13d#[14d# Run standalone?  vsftpd can run either from an inetd or as a standalone[15d# daemon started from an initscript.[16d[39m(B[mlisten=NO[17d[36m#[18d# This directive enables listening on IPv6 sockets. By default, listening[19d# on the IPv6 "any" address (::) will accept connections from both IPv6[20d# and IPv4 clients. It is not necessary to listen on *both* IPv4 and IPv6[21d# sockets. If you want that (perhaps because you want to listen on specific[3d[39m(B[m[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[19d[?12l[?25h[?25l[20d[?12l[?25h[?25l[21d[?12l[?25h[?25l7[3;21r8[10S[1;24r[12;1H[36m# addresses) then you must run two copies of vsftpd with two configuration[13d# files.[14d[39m(B[mlisten_ipv6=YES[15d[36m#[16d# Allow anonymous FTP? (Disabled by default).[17d[39m(B[manonymous_enable=NO[18d[36m#[19d# Uncomment this to allow local users to log in.[20d[39m(B[mlocal_enable=YES[21d[36m#[12d[39m(B[m[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[22d[K[19d[?12l[?25h[?25l[20d[?12l[?25h[?25l[21d[?12l[?25h[?25l7[3;22r8[22d[10S[1;24r[12;1H[36m#Uncomment this to enable any form of FTP write command.[13d[39m(B[mwrite_enable=YES[14d[36m#[15d# Default umask for local users is 077. You may wish to change this to 022,[16d# if your users expect that (022 is used by most other ftpd's)[17d#local_umask=022[18d#[19d# Uncomment this to allow the anonymous FTP user to upload files. This only[20d# has an effect if the above global write enable is activated. Also, you will[21d# obviously need to create a directory writable by the FTP user.[12d[39m(B[m[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[19d[?12l[?25h[?25l[20d[?12l[?25h[?25l[21d[?12l[?25h[?25l7[3;22r8[22d[10S[1;24r[12;1Hanon_upload_enable=YES[13d[36m#[14d# Uncomment this if you want the anonymous FTP user to be able to create[15d# new directories.[16d[39m(B[manon_mkdir_write_enable=YES[17d[36m#[18d# Activate directory messages - messages given to remote users when they[19d# go into a certain directory.[20d[39m(B[mdirmessage_enable=YES[21d[36m#[12d[39m(B[m[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[19d[?12l[?25h[?25l[20d[?12l[?25h[?25l[21d[?12l[?25h[?25l7[3;22r8[22d[10S[1;24r[12;1H[36m# If enabled, vsftpd will display directory listings with the time[13d# in  your  local  time  zone.  The default is to display GMT. The[14d# times returned by the MDTM FTP command are also affected by this[15d# option.[16d[39m(B[muse_localtime=YES[17d[36m#[18d# Activate logging of uploads/downloads.[19d[39m(B[mxferlog_enable=YES[20d[36m#[21d# Make sure PORT transfer connections originate from port 20 (ftp-data).[12d[39m(B[m[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[19d[?12l[?25h[?25l[20d[?12l[?25h[?25l[21d[?12l[?25h[?25l7[3;22r8[22d[10S[1;24r[12;1Hconnect_from_port_20=YES[13d[36m#[14d# If you want, you can arrange for uploaded anonymous files to be owned by[15d# a different user. Note! Using "root" for uploaded files is not[16d# recommended![17d#chown_uploads=YES[18d#chown_username=whoever[19d#[20d# You may override where the log file goes if you like. The default is shown[21d# below.[12d[39m(B[m[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[19d[?12l[?25h[?25l[20d[?12l[?25h[?25l[21d[?12l[?25h[?25l7[3;22r8[22d[10S[1;24r[12;1H[36m#xferlog_file=/var/log/vsftpd.log[13d#[14d# If you want, you can have your log file in standard ftpd xferlog format.[15d# Note that the default log file location is /var/log/xferlog in this case.[16d#xferlog_std_format=YES[17d#[18d# You may change the default value for timing out an idle session.[19d#idle_session_timeout=600[20d#[21d# You may change the default value for timing out a data connection.[12d[39m(B[m[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[19d[?12l[?25h[?25l[20d[?12l[?25h[?25l[21d[?12l[?25h[?25l7[3;22r8[22d[10S[1;24r[12;1H[36m#data_connection_timeout=120[13d#[14d# It is recommended that you define on your system a unique user which the[15d# ftp server can use as a totally isolated and unprivileged user.[16d#nopriv_user=ftpsecure[17d#[18d# Enable this and the server will recognise asynchronous ABOR requests. Not[19d# recommended for security (the code is non-trivial). Not enabling it,[20d# however, may confuse older FTP clients.[21d#async_abor_enable=YES[12d[39m(B[m[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[19d[?12l[?25h[?25l[20d[?12l[?25h[?25l[21d[?12l[?25h[?25l7[3;22r8[22d[10S[1;24r[12;1H[36m#[13d# By default the server will pretend to allow ASCII mode but in fact ignore[14d# the request. Turn on the below options to have the server actually do ASCII[15d# mangling on files when in ASCII mode.[16d# Beware that on some FTP servers, ASCII support allows a denial of service[17d# attack (DoS) via the command "SIZE /big/file" in ASCII mode. vsftpd[18d# predicted this attack and has always been safe, reporting the size of the[19d# raw file.[20d# ASCII mangling is a horrible feature of the protocol.[21d[39m(B[mascii_upload_enable=YES[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[19d[?12l[?25h[?25l[20d[?12l[?25h[?25l[21d[?12l[?25h[?25l7[3;22r8[22d[10S[1;24r[12;1Hascii_download_enable=YES[13d[36m#[14d# You may fully customise the login banner string:[15d#ftpd_banner=Welcome to blah FTP service.[16d#[17d# You may specify a file of disallowed anonymous e-mail addresses. Apparently[18d# useful for combatting certain DoS attacks.[19d#deny_email_enable=YES[20d# (default follows)[21d#banned_email_file=/etc/vsftpd.banned_emails[12d[39m(B[m[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[19d[?12l[?25h[?25l[20d[?12l[?25h[?25l[21d[?12l[?25h[?25l7[3;22r8[22d[10S[1;24r[12;1H[36m#[13d# You may restrict local users to their home directories.  See the FAQ for[14d# the possible risks in this before using chroot_local_user or[15d# chroot_list_enable below.[16d#chroot_local_user=YES[17d#[18d# You may specify an explicit list of local users to chroot() to their home[19d# directory. If chroot_local_user is YES, then this list becomes a list of[20d# users to NOT chroot().[21d# (Warning! chroot'ing can be very dangerous. If using chroot, make sure that[12d[39m(B[m[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[23d[J[24;80H[?12l[?25h[24;1H[?1049l[23;0;0t[?1l>]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/2103[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/2103[00m$ ftp localhost
+Connected to localhost.
+220 (vsFTPd 3.0.3)
+Name (localhost:george): george
+331 Please specify the password.
+Password:
+230 Login successful.
+Remote system type is UNIX.
+Using binary mode to transfer files.
+ftp> exit
+221 Goodbye.
+]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/2103[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/2103[00m$ exit
+exit
+
+Script done on 2020-03-21 15:38:02+0530
