@@ -1,0 +1,109 @@
+CEC CS 18 017
+George Mani
+
+--------------------------------
+#1: Aim/task: Package management (t8.1)
+---------------------------------
+
+Command/Shell script/Program name: 
+---------------------------------
+
+           # To update all local packages
+	        sudo apt-get update
+
+           # To upgrade all the packages to latest available versions
+                sudo apt-get upgrade
+
+           # To install synaptic
+                sudo apt-get install synaptic
+
+                 # To remove synaptic
+                      sudo apt remove synaptic
+  
+           # To install tasksel
+                sudo apt-get install tasksel
+
+                 # To remove tasksel 
+                      sudo apt remove tasksel
+
+           # To install ruby 
+                sudo snap install ruby --classic
+
+                 # To remove ruby
+                      sudo snap remove ruby
+
+           # To install apache2
+	        sudo apt-get install apache2
+
+           # To get the status of package apache2
+                sudo dpkg -s apache2
+  
+           # To remove all dependencies and configuration files that are no longer required
+                sudo apt-get autoremove
+         
+           # To list all installed packages
+                sudo apt list > packages.txt
+
+
+--------------------------------
+Output: 
+
+
+           # List of all installed packages: packages.txt 
+              
+  
+
+--------------------------------
+#2: Aim/task: Perl (t8.2)
+---------------------------------
+Program name:
+
+---------------------------------
+1. Program to print Hello, World!!
+
+2. Program to display first n fibonacci series 
+
+3. Program to check whether a number is palindrome or not
+
+4. Program to reverse the contents of an array
+
+
+--------------------------------
+Output:
+
+-------------------------------
+
+1. Hello, World!!
+
+2. Enter limit: 10
+   Fibbonacci series:
+   0
+   1
+   1
+   2
+   3
+   5
+   8
+   13
+
+3. Enter a number: 121
+   Number is a palindrome
+
+4. The original array is : 2   3   4   5   6   7   
+   The reversed array is : 7   6   5   4   3   2 
+
+
+-------------------
+Remarks if any:
+
+
+
+
+
+-------------------------------------
+-------------------------------------
+
+            
+
+
+
