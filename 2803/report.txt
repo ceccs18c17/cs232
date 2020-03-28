@@ -1,0 +1,155 @@
+CEC CS 18 017
+George Mani
+
+--------------------------------
+#1: Aim/task : LAMP Stack (t8.3)
+---------------------------------
+Command/Shell script/Program name: 
+---------------------------------
+      # To update all local packages
+	     sudo apt-get update
+
+      1) Install Apache               
+                
+                # To install Apache
+                       sudo apt-get install apache2
+ 
+                # To check whether Apache is installed correctly
+                       sudo service apache2 status
+                  
+                # To make sure that the UFW firewall has an application profile for Apache 
+                       sudo ufw app list
+
+                # In the Apache Full profile, make sure it allows the traffic on ports 80 and 443
+                       sudo ufw app info 'Apache Full'
+
+       2) Install MySQL
+
+                # To install MySQL and create a database
+                       sudo apt-get install mysql-server
+             
+                # To check whether the MySQL server is running
+                       sudo systemctl status mysql 
+               
+                # To connect to the MySQL Server
+                       sudo mysql
+               
+                # To display all databases in the current server
+                       mysql> show databases;
+
+       3) Install PHP
+              
+                # To install PHP
+                       sudo apt-get install php libapache2-mod-php php-mysql 
+
+                # To test PHP processing on Web Server
+                       sudo nano /var/www/html/info.php
+
+                # Create a sample php page using nano editor:
+                       sudo nano /var/www/html/index.php
+
+
+
+
+--------------------------------
+Input:
+
+	# php file for showing version info
+	     info.php	
+         
+        # php file hosted in local host
+	     index.php
+
+------------------------------------
+Output: 
+
+     
+	# php version info at 192.168.42.220/info.php
+	       1.png
+	
+	# php page at 192.168.42.220/index.php
+	       2.png
+	
+
+
+--------------------------------
+
+
+
+#2: Aim/task: Kernel compilation (t8.4)
+---------------------------------
+Command/Shell script/Program name:
+---------------------------------
+
+       # Download the latest stable kernel 
+	       wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.5.13.tar.xz
+
+       # Extract the source code
+	       unxz -v linux-5.5.13.tar.xz
+
+       # Obtain PGP Signature for the kernel
+               wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.5.13.tar.sign
+
+       # Verify the PGP Signature
+               gpg --verify linux-5.5.13.tar.sign 
+
+       # Extract linux tarball
+	       tar xvf linux-5.5.13.tar
+
+       # Create the configuration file
+               cd linux-5.5.13
+               cp -v /boot/config-$(uname -r) .config
+
+       # Install the various development tools
+               sudo apt-get install build-essential libncurses-dev bison flex libssl-dev libelf-dev
+
+       # Compile the kernel
+               make -j $(nproc)
+
+
+
+-------------------------------
+Output: 
+
+       # Compiled Kernel at /linux-5.5.13
+               Screenshot of the compiled file is attached (kernel.png)
+
+-------------------
+Remarks if any:
+
+
+
+
+
+-------------------------------------
+       
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
