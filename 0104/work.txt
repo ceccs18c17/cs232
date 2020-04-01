@@ -1,0 +1,943 @@
+Script started on 2020-04-01 19:58:07+0530
+(base) ]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/0104[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/0104[00m$ nano system_config1.sh
+[?1049h[22;0;0t[1;24r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[22;35H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 2.9.3                  system_config1.sh                             [1;79H(B[m[23d(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Uncut Text(B[0;7m^T(B[m To Linter (B[0;7m^_(B[m Go To Line[22d[3d[39;49m(B[m[?12l[?25h[?25l[1;71H(B[0;7mModified(B[m[3d[36m#[39m(B[m[?12l[?25h[?25l[36m![39m(B[m[?12l[?25h[?25l[36m/[39m(B[m[?12l[?25h[?25l[36mb[39m(B[m[?12l[?25h[?25l[36mi[39m(B[m[?12l[?25h[?25l[36mn[39m(B[m[?12l[?25h[?25l[36m/[39m(B[m[?12l[?25h[?25l[36mb[39m(B[m[?12l[?25h[?25l[36ma[39m(B[m[?12l[?25h[?25l[36ms[39m(B[m[?12l[?25h[?25l[36mh[39m(B[m[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25le[?12l[?25h[?25lc[?12l[?25h[?25lh[?12l[?25h[?25l(B[0;1m[34mecho[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l -[?12l[?25h[?25l[32m-e[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l "[?12l[?25h[?25lY[?12l[?25h[?25lo[?12l[?25h[?25lu[?12l[?25h[?25lr[22d[K[5;14H[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l u[?12l[?25h[?25ls[?12l[?25h[?25le[?12l[?25h[?25lr[?12l[?25h[?25ln[?12l[?25h[?25la[?12l[?25h[?25lm[?12l[?25h[?25le[?12l[?25h[?25l[32m:[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l [32m$[39m(B[m[?12l[?25h[?25l(B[0;1m[31m$U[39m(B[m[?12l[?25h[?25l(B[0;1m[31mS[39m(B[m[?12l[?25h[?25l(B[0;1m[31mE[39m(B[m[?12l[?25h[?25l(B[0;1m[31mR[39m(B[m[?12l[?25h[?25l[5;9H(B[0;1m[33m"Your username: $USER"[39m(B[m[?12l[?25h[?25l[5;9H"Your username[32m:[39m(B[m (B[0;1m[31m$USER[39m(B[m[K[?12l[?25h[?25l[32m\[39m(B[m[?12l[?25h[?25ln[?12l[?25h[?25l[5;9H(B[0;1m[33m"Your username: $USER\n"[39m(B[m[?12l[?25h[?25l[22d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)                   [23;1H Y(B[m Yes[K[24d(B[0;7m N(B[m No  [14G   (B[0;7m^C(B[m Cancel[K[22;63H[?12l[?25h[?25l[23d(B[0;7m^G(B[m Get Help[23;21H(B[0;7mM-D(B[m DOS Format[41G(B[0;7mM-A(B[m Append[23;61H(B[0;7mM-B(B[m Backup File[24d(B[0;7m^C(B[m Cancel[17G    (B[0;7mM-M(B[m Mac Format[41G(B[0;7mM-P(B[m Prepend[24;61H(B[0;7m^T(B[m To Files[22d(B[0;7mFile Name to Write: system_config1.sh                        (B[m[22;38H[?12l[?25h[?25l[K[1;79H[1;71H(B[0;7m        (B[m[22;32H(B[0;7m[ Wrote 3 lines ](B[m[J[24;80H[?12l[?25h[24;1H[?1049l[23;0;0t[?1l>(base) ]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/0104[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/0104[00m$ nano system_config1.shsudo ./system_config1.sh [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cchmod +x system_conffig1.sh[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cchmod +x system_confi[1Pg1.sh[A(base) ]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/0104[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/0104[00m$ [C[C[C[Cchmod +x system_config[1P1.sh[A(base) ]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/0104[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/0104[00m$ [C[C[Cchmod +x system_config1[1P.sh[A(base) ]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/0104[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/0104[00m$ [C[Cchmod +x system_config1.[1Psh[A(base) ]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/0104[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/0104[00m$ [Cchmod +x system_config1.s[1Ph[A(base) ]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/0104[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/0104[00m$ 
+
+(base) ]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/0104[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/0104[00m$ chmod +x system_config1.ssh[A(base) ]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/0104[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/0104[00m$ [2Pnano system_config1.sh
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo ./system_config1.sh [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P./system_config1.sh
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P./system_config1.sh[1P./system_config1.sh[1P./system_config1.sh[1P./system_config1.sh
+Your username: george
+
+(base) ]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/0104[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/0104[00m$ ./system_config1.shchmod +x system_config1.ssh[A(base) ]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/0104[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/0104[00m$ [2Pnano system_config1.sh
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?1049h[22;0;0t[1;24r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[22;33H(B[0;7m[ Reading File ](B[m[22;39H(B[0;7m 3 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                  system_config1.sh                             [1;79H(B[m[23d(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Uncut Text(B[0;7m^T(B[m To Linter (B[0;7m^_(B[m Go To Line[22d[3d[39;49m[36m#!/bin/bash[5d(B[0;1m[34mecho[39m(B[m [32m-e[39m(B[m (B[0;1m[33m"Your username: $USER\n"[3d[39m(B[m[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[1;71H(B[0;7mModified(B[m[6de[?12l[?25h[?25lc[?12l[?25h[?25lh[?12l[?25h[?25l(B[0;1m[34mecho[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l -[?12l[?25h[?25l[32m-e[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l "[?12l[?25h[?25lY[?12l[?25h[?25lo[?12l[?25h[?25lu[?12l[?25h[?25lr[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l c[?12l[?25h[?25lu[?12l[?25h[?25lr[?12l[?25h[?25lr[?12l[?25h[?25le[?12l[?25h[?25ln[?12l[?25h[?25lt[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l s[22d[K[6;24H[?12l[?25h[?25lh[?12l[?25h[?25le[?12l[?25h[?25ll[?12l[?25h[?25ll[?12l[?25h[?25l[32m:[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l [32m$[39m(B[m[?12l[?25h[?25l(B[0;1m[31m$S[39m(B[m[?12l[?25h[?25l(B[0;1m[31mH[39m(B[m[?12l[?25h[?25l(B[0;1m[31mE[39m(B[m[?12l[?25h[?25l(B[0;1m[31mL[39m(B[m[?12l[?25h[?25l(B[0;1m[31mL[39m(B[m[?12l[?25h[?25l[32m\[39m(B[m[?12l[?25h[?25ln[?12l[?25h[?25l[6;9H(B[0;1m[33m"Your current shell: $SHELL\n"[39m(B[m[?12l[?25h[?25l[7d[?12l[?25h[?25le[?12l[?25h[?25lc[?12l[?25h[?25lh[?12l[?25h[?25l(B[0;1m[34mecho[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l -[?12l[?25h[?25l[32m-e[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l "[?12l[?25h[?25lY[?12l[?25h[?25lo[?12l[?25h[?25lu[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l h[?12l[?25h[?25lo[?12l[?25h[?25lm[?12l[?25h[?25le[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l d[?12l[?25h[?25li[?12l[?25h[?25lr[?12l[?25h[?25le[?12l[?25h[?25lc[?12l[?25h[?25lt[?12l[?25h[?25lo[?12l[?25h[?25lr[?12l[?25h[?25ly[?12l[?25h[?25l[32m:[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l [32m$[39m(B[m[?12l[?25h[?25l(B[0;1m[31m$H[39m(B[m[?12l[?25h[?25l(B[0;1m[31mO[39m(B[m[?12l[?25h[?25l(B[0;1m[31mM[39m(B[m[?12l[?25h[?25l(B[0;1m[31mE[39m(B[m[?12l[?25h[?25l[7;9H(B[0;1m[33m"You home directory: $HOME"[39m(B[m[?12l[?25h[?25l[7;9H"You home directory[32m:[39m(B[m (B[0;1m[31m$HOME[39m(B[m[K[?12l[?25h[?25l[32m\[39m(B[m[?12l[?25h[?25ln[?12l[?25h[?25l[7;9H(B[0;1m[33m"You home directory: $HOME\n"[39m(B[m[?12l[?25h[?25l[8d[?12l[?25h[?25le[?12l[?25h[?25lc[?12l[?25h[?25lh[?12l[?25h[?25l(B[0;1m[34mecho[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l -[?12l[?25h[?25l[32m-e[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l "[?12l[?25h[?25lY[?12l[?25h[?25lo[?12l[?25h[?25lu[?12l[?25h[?25lr[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l o[?12l[?25h[?25lp[?12l[?25h[?25le[?12l[?25h[?25le[?12l[?25h[?25lr[?12l[?25h[?25la[?12l[?25h[?25lt[?12l[?25h[?25li[?12l[?25h[?25ln[?12l[?25h[?25lf[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lr[?12l[?25h[?25la[?12l[?25h[?25lr[?12l[?25h[?25l [?12l[?25h[?25lt[?12l[?25h[?25li[?12l[?25h[?25ln[?12l[?25h[?25lg[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l s[?12l[?25h[?25ly[?12l[?25h[?25lt[?12l[?25h[?25le[?12l[?25h[?25lm[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25ls[?12l[?25h[?25lt[?12l[?25h[?25le[?12l[?25h[?25lm[?12l[?25h[?25l[32m:[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l t[?12l[?25h[?25ly[?12l[?25h[?25lp[?12l[?25h[?25le[?12l[?25h[?25l[32m:[39m(B[m[?12l[?25h[?25l[32m\[39m(B[m[?12l[?25h[?25ln[?12l[?25h[?25l[8;9H(B[0;1m[33m"Your operating system type:\n"[39m(B[m[?12l[?25h[?25l[9d[?12l[?25h[?25lu[?12l[?25h[?25ln[?12l[?25h[?25la[?12l[?25h[?25lm[?12l[?25h[?25le[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l -[?12l[?25h[?25lo[?12l[?25h[?25l[10d[?12l[?25h[?25le[?12l[?25h[?25lc[?12l[?25h[?25lh[?12l[?25h[?25l(B[0;1m[34mecho[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l -[?12l[?25h[?25l[32m-e[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l "[?12l[?25h[?25l[32m\[39m(B[m[?12l[?25h[?25ln[?12l[?25h[?25lY[?12l[?25h[?25lo[?12l[?25h[?25lu[?12l[?25h[?25lr[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l c[?12l[?25h[?25lu[?12l[?25h[?25lr[?12l[?25h[?25lr[?12l[?25h[?25le[?12l[?25h[?25ln[?12l[?25h[?25lt[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l p[?12l[?25h[?25la[?12l[?25h[?25lt[?12l[?25h[?25lh[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l s[?12l[?25h[?25le[?12l[?25h[?25l(B[0;1m[34mset[39m(B[m[?12l[?25h[?25lsett[?12l[?25h[?25li[?12l[?25h[?25ln[?12l[?25h[?25lg[?12l[?25h[?25l[32m:[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l [32m$[39m(B[m[?12l[?25h[?25l(B[0;1m[31m$P[39m(B[m[?12l[?25h[?25l(B[0;1m[31mA[39m(B[m[?12l[?25h[?25l(B[0;1m[31mT[39m(B[m[?12l[?25h[?25l(B[0;1m[31mH[39m(B[m[?12l[?25h[?25l[10;9H(B[0;1m[33m"\nYour current path setting: $PATH"[39m(B[m[?12l[?25h[?25l[10;9H"[32m\[39m(B[mnYour current path setting[32m:[39m(B[m (B[0;1m[31m$PATH[39m(B[m[K[?12l[?25h[?25l[32m\[39m(B[m[?12l[?25h[?25ln[?12l[?25h[?25l[10;9H(B[0;1m[33m"\nYour current path setting: $PATH\n"[39m(B[m[?12l[?25h[?25l[11d[?12l[?25h[?25le[?12l[?25h[?25lc[?12l[?25h[?25lh[?12l[?25h[?25l(B[0;1m[34mecho[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l -[?12l[?25h[?25l[32m-e[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l Y[?12l[?25h[?25lo[?12l[?25h[?25lu[?12l[?25h[?25lr[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l c[?12l[?25h[?25lu[?12l[?25h[?25lr[?12l[?25h[?25lr[?12l[?25h[?25le[?12l[?25h[?25ln[?12l[?25h[?25lt[?12l[?25h[?25lb[?12l[?25h[?25l [?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l w[?12l[?25h[?25lo[?12l[?25h[?25lr[?12l[?25h[?25lk[?12l[?25h[?25li[?12l[?25h[?25ln[?12l[?25h[?25lg[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l d[?12l[?25h[?25li[?12l[?25h[?25lr[?12l[?25h[?25le[?12l[?25h[?25lc[?12l[?25h[?25lt[?12l[?25h[?25lo[?12l[?25h[?25lr[?12l[?25h[?25ly[?12l[?25h[?25l[32m:[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l "[?12l[?25h[?25l[42m [49m(B[m[K[?12l[?25h[?25l "[?12l[?25h[?25l[42m [49m(B[m[K[?12l[?25h[?25l [?12l[?25h[?25l"[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l(B[0;1m[33m"Your current working directory:"[11;10H[39m(B[m[?12l[?25h[?25l[C[?12l[?25h[?25l[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[12d[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25lp[?12l[?25h[?25lw[?12l[?25h[?25ld[?12l[?25h[?25l[13d[?12l[?25h[?25le[?12l[?25h[?25lc[?12l[?25h[?25lh[?12l[?25h[?25lp[?12l[?25h[?25lo[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l(B[0;1m[34mecho[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l -[?12l[?25h[?25l[32m-e[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l "[?12l[?25h[?25l[32m\[39m(B[m[?12l[?25h[?25ln[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l N[?12l[?25h[?25lu[?12l[?25h[?25lm[?12l[?25h[?25lb[?12l[?25h[?25le[?12l[?25h[?25lr[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l o[?12l[?25h[?25lf[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l u[?12l[?25h[?25ls[?12l[?25h[?25le[?12l[?25h[?25lr[?12l[?25h[?25ls[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l c[?12l[?25h[?25lu[?12l[?25h[?25lr[?12l[?25h[?25lr[?12l[?25h[?25le[?12l[?25h[?25ln[?12l[?25h[?25lt[?12l[?25h[?25ll[?12l[?25h[?25ly[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l l[?12l[?25h[?25lo[?12l[?25h[?25lg[?12l[?25h[?25lg[?12l[?25h[?25le[?12l[?25h[?25ld[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l i[?12l[?25h[?25l[32min[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l [32m:[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[K[?12l[?25h[?25l [?12l[?25h[?25l[32m:[39m(B[m[?12l[?25h[?25l[13;9H(B[0;1m[33m"\n Number of users currently logged in:"[39m(B[m[?12l[?25h[?25l[14d[?12l[?25h[?25lw[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25lw[?12l[?25h[?25ld[?12l[?25h[?25l[13d[?12l[?25h[?25l[C[?12l[?25h[?25l [?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l [?12l[?25h[?25l[14dw[?12l[?25h[?25l[22d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)                   [23;1H Y(B[m Yes[K[24d(B[0;7m N(B[m No  [14G   (B[0;7m^C(B[m Cancel[K[22;63H[?12l[?25h[?25l[23d(B[0;7m^G(B[m Get Help[23;21H(B[0;7mM-D(B[m DOS Format[41G(B[0;7mM-A(B[m Append[23;61H(B[0;7mM-B(B[m Backup File[24d(B[0;7m^C(B[m Cancel[17G    (B[0;7mM-M(B[m Mac Format[41G(B[0;7mM-P(B[m Prepend[24;61H(B[0;7m^T(B[m To Files[22d(B[0;7mFile Name to Write: system_config1.sh                        (B[m[22;38H[?12l[?25h[?25l[K[1;79H[1;71H(B[0;7m        (B[m[22;32H(B[0;7m[ Wrote 12 lines ](B[m[J[24;80H[?12l[?25h[24;1H[?1049l[23;0;0t[?1l>(base) ]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/0104[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/0104[00m$ nano system_config1.sh[3P./system_config1.shchmod +x system_config1.ssh
+(base) ]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/0104[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/0104[00m$ chmod +x system_config1.ssh[A(base) ]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/0104[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/0104[00m$ [2Pnano system_config1.sh
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3P./system_config1.shnano system_config1.sh[3P./system_config1.sh
+Your username: george
+
+Your current shell: /bin/bash
+
+You home directory: /home/george
+
+Your operating system type:
+
+GNU/Linux
+
+Your current path setting: /home/george/anaconda3/bin:/home/george/anaconda3/condabin:/home/george/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+Your current working directory:
+/home/george/fosslab/0104
+
+ Number of users currently logged in:
+ 20:04:32 up  4:43,  1 user,  load average: 0.01, 0.12, 0.28
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+george   :0       :0               15:26   ?xdm?   2:39   0.00s /usr/lib/gdm3/g
+(base) ]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/0104[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/0104[00m$ nano system_config2.txt
+[?1049h[22;0;0t[1;24r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[22;35H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 2.9.3                  system_config2.txt                            [1;79H(B[m[23d(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Uncut Text(B[0;7m^T(B[m To Spell  (B[0;7m^_(B[m Go To Line[22d[3d[39;49m(B[m[?12l[?25h[?25l[1;71H(B[0;7mModified(B[m[3d[36m#[39m(B[m[?12l[?25h[?25l[36m![39m(B[m[?12l[?25h[?25l[36m/[39m(B[m[?12l[?25h[?25l[36mb[39m(B[m[?12l[?25h[?25l[36mi[39m(B[m[?12l[?25h[?25l[36mn[39m(B[m[?12l[?25h[?25l[36m/[39m(B[m[?12l[?25h[?25l[36mb[39m(B[m[?12l[?25h[?25l[36ma[39m(B[m[?12l[?25h[?25l[36ms[39m(B[m[?12l[?25h[?25l[36mh[39m(B[m[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25le[?12l[?25h[?25lc[?12l[?25h[?25lh[?12l[?25h[?25lo[?12l[?25h[?25l [?12l[?25h[?25l-[?12l[?25h[?25le[?12l[?25h[?25l [?12l[?25h[?25l"[?12l[?25h[?25lY[?12l[?25h[?25lo[?12l[?25h[?25lu[?12l[?25h[?25lr[22d[K[5;14H[?12l[?25h[?25l [?12l[?25h[?25lO[?12l[?25h[?25lS[?12l[?25h[?25l [?12l[?25h[?25la[?12l[?25h[?25ln[?12l[?25h[?25ld[?12l[?25h[?25l [?12l[?25h[?25lv[?12l[?25h[?25le[?12l[?25h[?25lr[?12l[?25h[?25ls[?12l[?25h[?25li[?12l[?25h[?25lo[?12l[?25h[?25ln[?12l[?25h[?25l,[?12l[?25h[?25l [?12l[?25h[?25lr[?12l[?25h[?25le[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[?12l[?25h[?25l [?12l[?25h[?25lr[?12l[?25h[?25le[?12l[?25h[?25ll[?12l[?25h[?25le[?12l[?25h[?25la[?12l[?25h[?25ls[?12l[?25h[?25le[?12l[?25h[?25l [?12l[?25h[?25ln[?12l[?25h[?25lu[?12l[?25h[?25lm[?12l[?25h[?25lb[?12l[?25h[?25le[?12l[?25h[?25lr[?12l[?25h[?25l:[?12l[?25h[?25l"[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[22d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)                   [23;1H Y(B[m Yes[K[24d(B[0;7m N(B[m No  [14G   (B[0;7m^C(B[m Cancel[K[22;63H[?12l[?25h[?25l[J[24;80H[?12l[?25h[24;1H[?1049l[23;0;0t[?1l>(base) ]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/0104[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/0104[00m$ nano system_config3[K2.sh
+[?1049h[22;0;0t[1;24r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[49m(B[m[H[2J[22;35H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 2.9.3                  system_config2.sh                             [1;79H(B[m[23d(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Uncut Text(B[0;7m^T(B[m To Linter (B[0;7m^_(B[m Go To Line[22d[3d[49m(B[m[?12l[?25h[?25l[1;71H(B[0;7mModified(B[m[3d[36m#[39m(B[m[?12l[?25h[?25l[36m![39m(B[m[?12l[?25h[?25l[36m/[39m(B[m[?12l[?25h[?25l[36mb[39m(B[m[?12l[?25h[?25l[36mi[39m(B[m[?12l[?25h[?25l[36mn[39m(B[m[?12l[?25h[?25l[36m/[39m(B[m[?12l[?25h[?25l[36mb[39m(B[m[?12l[?25h[?25l[36ma[39m(B[m[?12l[?25h[?25l[36ms[39m(B[m[?12l[?25h[?25l[36mh[39m(B[m[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25le[?12l[?25h[?25lc[?12l[?25h[?25lh[?12l[?25h[?25l(B[0;1m[34mecho[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l -[?12l[?25h[?25l[32m-e[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l "[?12l[?25h[?25lY[?12l[?25h[?25lo[?12l[?25h[?25ly[?12l[?25h[?25l [22d[K[5;12H[?12l[?25h[?25lu[?12l[?25h[?25lr[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l O[?12l[?25h[?25lS[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l a[?12l[?25h[?25ln[?12l[?25h[?25ld[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l v[?12l[?25h[?25le[?12l[?25h[?25lr[?12l[?25h[?25ls[?12l[?25h[?25li[?12l[?25h[?25lo[?12l[?25h[?25ln[?12l[?25h[?25l,[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l r[?12l[?25h[?25le[?12l[?25h[?25ll[?12l[?25h[?25le[?12l[?25h[?25la[?12l[?25h[?25ls[?12l[?25h[?25le[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l n[?12l[?25h[?25lu[?12l[?25h[?25lm[?12l[?25h[?25lb[?12l[?25h[?25le[?12l[?25h[?25lr[?12l[?25h[?25l[32m:[39m(B[m[?12l[?25h[?25l[5;9H(B[0;1m[33m"Your OS and version, release number:"[39m(B[m[?12l[?25h[?25l[6d[?12l[?25h[?25ll[?12l[?25h[?25ls[?12l[?25h[?25lb[?12l[?25h[?25l_[?12l[?25h[?25lr[?12l[?25h[?25le[?12l[?25h[?25ll[?12l[?25h[?25le[?12l[?25h[?25la[?12l[?25h[?25ls[?12l[?25h[?25le[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l -[?12l[?25h[?25la[?12l[?25h[?25l[7d[?12l[?25h[?25le[?12l[?25h[?25lc[?12l[?25h[?25lh[?12l[?25h[?25l(B[0;1m[34mecho[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l -[?12l[?25h[?25l[32m-e[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l "[?12l[?25h[?25l[32m\[39m(B[m[?12l[?25h[?25ln[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l [?12l[?25h[?25lY[?12l[?25h[?25lo[?12l[?25h[?25lu[?12l[?25h[?25lr[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l l[?12l[?25h[?25li[?12l[?25h[?25ln[?12l[?25h[?25lu[?12l[?25h[?25lx[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l k[?12l[?25h[?25le[?12l[?25h[?25lr[?12l[?25h[?25ln[?12l[?25h[?25le[?12l[?25h[?25ll[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l v[?12l[?25h[?25le[?12l[?25h[?25lr[?12l[?25h[?25ls[?12l[?25h[?25li[?12l[?25h[?25lo[?12l[?25h[?25ln[?12l[?25h[?25l[32m:[39m(B[m[?12l[?25h[?25l[7;9H(B[0;1m[33m"\nYour linux kernel version:"[39m(B[m[?12l[?25h[?25l[8d[?12l[?25h[?25ly[?12l[?25h[?25l[K[?12l[?25h[?25lu[?12l[?25h[?25ln[?12l[?25h[?25la[?12l[?25h[?25lm[?12l[?25h[?25le[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l -[?12l[?25h[?25l[32m-r[39m(B[m[?12l[?25h[?25l[9d[?12l[?25h[?25le[?12l[?25h[?25lc[?12l[?25h[?25lh[?12l[?25h[?25l(B[0;1m[34mecho[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l -[?12l[?25h[?25l[32m-e[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l "[?12l[?25h[?25l[32m\[39m(B[m[?12l[?25h[?25ln[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l A[?12l[?25h[?25ll[?12l[?25h[?25ll[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l a[?12l[?25h[?25lv[?12l[?25h[?25la[?12l[?25h[?25li[?12l[?25h[?25ll[?12l[?25h[?25la[?12l[?25h[?25lb[?12l[?25h[?25ll[?12l[?25h[?25le[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l s[?12l[?25h[?25lh[?12l[?25h[?25le[?12l[?25h[?25lk[?12l[?25h[?25l [?12l[?25h[?25ll[?12l[?25h[?25ll[?12l[?25h[?25ls[?12l[?25h[?25l[32m:[39m(B[m[?12l[?25h[?25l[9;9H(B[0;1m[33m"\n All available shells:"[39m(B[m[?12l[?25h[?25l[10d[?12l[?25h[?25lc[?12l[?25h[?25la[?12l[?25h[?25l(B[0;1m[34mcat[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l /[?12l[?25h[?25le[?12l[?25h[?25lt[?12l[?25h[?25lc[?12l[?25h[?25l/[?12l[?25h[?25ls[?12l[?25h[?25lh[?12l[?25h[?25le[?12l[?25h[?25ll[?12l[?25h[?25ll[?12l[?25h[?25ls[?12l[?25h[?25l[11d[?12l[?25h[?25le[?12l[?25h[?25lc[?12l[?25h[?25lh[?12l[?25h[?25l(B[0;1m[34mecho[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l -[?12l[?25h[?25l[32m-e[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l  "[?12l[?25h[?25l[32m\[39m(B[m[?12l[?25h[?25ln[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[1P[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25ln[?12l[?25h[?25lC[?12l[?25h[?25lP[?12l[?25h[?25lU[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l i[?12l[?25h[?25l[32min[39m(B[m[?12l[?25h[?25linf[?12l[?25h[?25lo[?12l[?25h[?25lr[?12l[?25h[?25lm[?12l[?25h[?25la[?12l[?25h[?25lt[?12l[?25h[?25li[?12l[?25h[?25lo[?12l[?25h[?25ln[?12l[?25h[?25l[32m:[39m(B[m[?12l[?25h[?25l[11;10H(B[0;1m[33m"\nCPU information:"[39m(B[m[?12l[?25h[?25l[12d[?12l[?25h[?25lc[?12l[?25h[?25la[?12l[?25h[?25l(B[0;1m[34mcat[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l /[?12l[?25h[?25lp[?12l[?25h[?25lr[?12l[?25h[?25lo[?12l[?25h[?25lc[?12l[?25h[?25l.[?12l[?25h[?25l [?12l[?25h[?25l/[?12l[?25h[?25lc[?12l[?25h[?25l(B[0;1m[34mcp[39m(B[m[?12l[?25h[?25lcpu[?12l[?25h[?25li[?12l[?25h[?25ln[?12l[?25h[?25lf[?12l[?25h[?25lo[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[A[?12l[?25h[?25l[1P[?12l[?25h[?25l (B[0;1m[33m"\nAll available shells:"[9;9H[39m(B[m[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l [?12l[?25h[?25l[1P [?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[?12l[?25h[?25l[22d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)                   [23;1H Y(B[m Yes[K[24d(B[0;7m N(B[m No  [14G   (B[0;7m^C(B[m Cancel[K[22;63H[?12l[?25h[?25l[23d(B[0;7m^G(B[m Get Help[23;21H(B[0;7mM-D(B[m DOS Format[41G(B[0;7mM-A(B[m Append[23;61H(B[0;7mM-B(B[m Backup File[24d(B[0;7m^C(B[m Cancel[17G    (B[0;7mM-M(B[m Mac Format[41G(B[0;7mM-P(B[m Prepend[24;61H(B[0;7m^T(B[m To Files[22d(B[0;7mFile Name to Write: system_config2.sh                        (B[m[22;38H[?12l[?25h[?25l[K[1;79H[1;71H(B[0;7m        (B[m[22;32H(B[0;7m[ Wrote 10 lines ](B[m[J[24;80H[?12l[?25h[24;1H[?1049l[23;0;0t[?1l>(base) ]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/0104[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/0104[00m$ nano system_config2.shtxt[4P./system_config1.shchmod +x system_config1.ssh[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.sh[K[A(base) ]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/0104[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/0104[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C2.sh[A(base) ]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/0104[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/0104[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+(base) ]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/0104[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/0104[00m$ chmod +x system_config2.ssh[A(base) ]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/0104[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/0104[00m$ [2Pnano system_config2.sh
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ctxt[4P./system_config1.sh[1P.sh2.sh
+Your OS and version, release number:
+No LSB modules are available.
+Distributor ID:	Ubuntu
+Description:	Ubuntu 18.04.4 LTS
+Release:	18.04
+Codename:	bionic
+
+Your linux kernel version:
+5.3.0-42-generic
+
+All available shells:
+# /etc/shells: valid login shells
+/bin/sh
+/bin/bash
+/bin/rbash
+/bin/dash
+
+CPU information:
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 142
+model name	: Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz
+stepping	: 9
+microcode	: 0xca
+cpu MHz		: 3021.431
+cache size	: 3072 KB
+physical id	: 0
+siblings	: 4
+core id		: 0
+cpu cores	: 2
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb invpcid_single pti ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp md_clear flush_l1d
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit
+bogomips	: 5399.81
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 1
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 142
+model name	: Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz
+stepping	: 9
+microcode	: 0xca
+cpu MHz		: 2931.210
+cache size	: 3072 KB
+physical id	: 0
+siblings	: 4
+core id		: 1
+cpu cores	: 2
+apicid		: 2
+initial apicid	: 2
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb invpcid_single pti ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp flush_l1d
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit
+bogomips	: 5399.81
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 2
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 142
+model name	: Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz
+stepping	: 9
+microcode	: 0xca
+cpu MHz		: 3070.573
+cache size	: 3072 KB
+physical id	: 0
+siblings	: 4
+core id		: 0
+cpu cores	: 2
+apicid		: 1
+initial apicid	: 1
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb invpcid_single pti ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp md_clear flush_l1d
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit
+bogomips	: 5399.81
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 3
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 142
+model name	: Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz
+stepping	: 9
+microcode	: 0xca
+cpu MHz		: 3020.838
+cache size	: 3072 KB
+physical id	: 0
+siblings	: 4
+core id		: 1
+cpu cores	: 2
+apicid		: 3
+initial apicid	: 3
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb invpcid_single pti ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp md_clear flush_l1d
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit
+bogomips	: 5399.81
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+(base) ]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/0104[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/0104[00m$ ./system_config2.shchmod +x system_config2.ssh[A(base) ]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/0104[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/0104[00m$ [2Pnano system_config2.sh
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?1049h[22;0;0t[1;24r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[22;33H(B[0;7m[ Reading File ](B[m[22;32H(B[0;7m[ Read 10 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                  system_config2.sh                             [1;79H(B[m[23d(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Uncut Text(B[0;7m^T(B[m To Linter (B[0;7m^_(B[m Go To Line[22d[3d[39;49m[36m#!/bin/bash[5d(B[0;1m[34mecho[39m(B[m [32m-e[39m(B[m (B[0;1m[33m"Your OS and version, release number:"[6d[39m(B[mlsb_release -a[7d(B[0;1m[34mecho[39m(B[m [32m-e[39m(B[m (B[0;1m[33m"\nYour linux kernel version:"[8d[39m(B[muname [32m-r[9d(B[0;1m[34mecho[39m(B[m [32m-e[39m(B[m (B[0;1m[33m"\nAll available shells:"[10d[34mcat[39m(B[m /etc/shells[11d(B[0;1m[34mecho[39m(B[m [32m-e[39m(B[m (B[0;1m[33m"\nCPU information:"[12d[34mcat[39m(B[m /proc/cpuinfo[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[?12l[?25h[?25l[1;71H(B[0;7mModified(B[m[13de[?12l[?25h[?25lc[?12l[?25h[?25lh[?12l[?25h[?25l(B[0;1m[34mecho[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l -[?12l[?25h[?25l[32m-e[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l "[?12l[?25h[?25l[32m\[39m(B[m[?12l[?25h[?25ln[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l M[?12l[?25h[?25le[?12l[?25h[?25lm[22d[K[13;16H[?12l[?25h[?25lo[?12l[?25h[?25lr[?12l[?25h[?25ly[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l u[?12l[?25h[?25l[42m [49m(B[m[K[?12l[?25h[?25l i[?12l[?25h[?25l[32min[39m(B[m[?12l[?25h[?25linf[?12l[?25h[?25lo[?12l[?25h[?25lr[?12l[?25h[?25lm[?12l[?25h[?25la[?12l[?25h[?25lt[?12l[?25h[?25li[?12l[?25h[?25lo[?12l[?25h[?25ln[?12l[?25h[?25l[32m:[39m(B[m[?12l[?25h[?25l[13;9H(B[0;1m[33m"\n Memory information:"[39m(B[m[?12l[?25h[?25l[14d[?12l[?25h[?25l[A[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l [?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l [?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[1P[?12l[?25h[?25l[14d[?12l[?25h[?25lc[?12l[?25h[?25la[?12l[?25h[?25l(B[0;1m[34mcat[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l /[?12l[?25h[?25lp[?12l[?25h[?25lr[?12l[?25h[?25lo[?12l[?25h[?25lc[?12l[?25h[?25l/[?12l[?25h[?25lm[?12l[?25h[?25le[?12l[?25h[?25lm[?12l[?25h[?25li[?12l[?25h[?25ln[?12l[?25h[?25lf[?12l[?25h[?25lo[?12l[?25h[?25l[15d[?12l[?25h[?25le[?12l[?25h[?25lc[?12l[?25h[?25lh[?12l[?25h[?25l(B[0;1m[34mecho[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l 0[?12l[?25h[?25l-[?12l[?25h[?25l[32m-e[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l [?12l[?25h[?25l-[K[?12l[?25h[?25l [?12l[?25h[?25l[42m [49m(B[m[K[?12l[?25h[?25l [?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l -[?12l[?25h[?25l[32m-e[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l "[?12l[?25h[?25l[32m\[39m(B[m[?12l[?25h[?25ln[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l H[?12l[?25h[?25la[?12l[?25h[?25lr[?12l[?25h[?25ls[?12l[?25h[?25l [?12l[?25h[?25ld[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l d[?12l[?25h[?25li[?12l[?25h[?25ls[?12l[?25h[?25lk[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l i[?12l[?25h[?25l[32min[39m(B[m[?12l[?25h[?25lind[?12l[?25h[?25l[32min[39m(B[m[K[?12l[?25h[?25linf[?12l[?25h[?25lo[?12l[?25h[?25lr[?12l[?25h[?25lm[?12l[?25h[?25la[?12l[?25h[?25lt[?12l[?25h[?25li[?12l[?25h[?25lo[?12l[?25h[?25ln[?12l[?25h[?25l[32m:[39m(B[m[?12l[?25h[?25l[32m\[39m(B[m[?12l[?25h[?25ln[?12l[?25h[?25l[15;9H(B[0;1m[33m"\n Hard disk information:\n"[39m(B[m[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[C[?12l[?25h[?25l(B[0;1m[33m"[39m(B[m[K[?12l[?25h[?25l(B[0;1m[33m"[39m(B[m[K[?12l[?25h[?25l(B[0;1m[33m"[39m(B[m[K[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[1P[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l(B[0;1m[33m:"[39m(B[m[?12l[?25h[?25l[C[?12l[?25h[?25l[16d[?12l[?25h[?25lf[?12l[?25h[?25ld[?12l[?25h[?25li[?12l[?25h[?25ls[?12l[?25h[?25lk[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l -[?12l[?25h[?25ll[?12l[?25h[?25l[17d[?12l[?25h[?25le[?12l[?25h[?25lc[?12l[?25h[?25lh[?12l[?25h[?25l(B[0;1m[34mecho[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l -[?12l[?25h[?25l[32m-e[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l "[?12l[?25h[?25l(B[0;1m[33m"File system(Mounted):"[39m(B[m[?12l[?25h[?25l[18d[?12l[?25h[?25lm[?12l[?25h[?25lo[?12l[?25h[?25lu[?12l[?25h[?25ln[?12l[?25h[?25lt[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l -[?12l[?25h[?25ll[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[22d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)                   [23;1H Y(B[m Yes[K[24d(B[0;7m N(B[m No  [14G   (B[0;7m^C(B[m Cancel[K[22;63H[?12l[?25h[?25l[23d(B[0;7m^G(B[m Get Help[23;21H(B[0;7mM-D(B[m DOS Format[41G(B[0;7mM-A(B[m Append[23;61H(B[0;7mM-B(B[m Backup File[24d(B[0;7m^C(B[m Cancel[17G    (B[0;7mM-M(B[m Mac Format[41G(B[0;7mM-P(B[m Prepend[24;61H(B[0;7m^T(B[m To Files[22d(B[0;7mFile Name to Write: system_config2.sh                        (B[m[22;38H[?12l[?25h[?25l[K[1;79H[1;71H(B[0;7m        (B[m[22;32H(B[0;7m[ Wrote 16 lines ](B[m[J[24;80H[?12l[?25h[24;1H[?1049l[23;0;0t[?1l>(base) ]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/0104[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/0104[00m$ nano system_config2.sh[3P./system_config2.shchmod +x system_config2.ssh
+(base) ]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/0104[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/0104[00m$ chmod +x system_config2.ssh[A(base) ]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/0104[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/0104[00m$ [2Pnano system_config2.sh
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3P./system_config2.sh
+Your OS and version, release number:
+No LSB modules are available.
+Distributor ID:	Ubuntu
+Description:	Ubuntu 18.04.4 LTS
+Release:	18.04
+Codename:	bionic
+
+Your linux kernel version:
+5.3.0-42-generic
+
+All available shells:
+# /etc/shells: valid login shells
+/bin/sh
+/bin/bash
+/bin/rbash
+/bin/dash
+
+CPU information:
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 142
+model name	: Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz
+stepping	: 9
+microcode	: 0xca
+cpu MHz		: 2847.853
+cache size	: 3072 KB
+physical id	: 0
+siblings	: 4
+core id		: 0
+cpu cores	: 2
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb invpcid_single pti ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp md_clear flush_l1d
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit
+bogomips	: 5399.81
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 1
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 142
+model name	: Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz
+stepping	: 9
+microcode	: 0xca
+cpu MHz		: 2930.021
+cache size	: 3072 KB
+physical id	: 0
+siblings	: 4
+core id		: 1
+cpu cores	: 2
+apicid		: 2
+initial apicid	: 2
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb invpcid_single pti ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp flush_l1d
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit
+bogomips	: 5399.81
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 2
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 142
+model name	: Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz
+stepping	: 9
+microcode	: 0xca
+cpu MHz		: 2313.132
+cache size	: 3072 KB
+physical id	: 0
+siblings	: 4
+core id		: 0
+cpu cores	: 2
+apicid		: 1
+initial apicid	: 1
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb invpcid_single pti ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp md_clear flush_l1d
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit
+bogomips	: 5399.81
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 3
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 142
+model name	: Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz
+stepping	: 9
+microcode	: 0xca
+cpu MHz		: 2543.243
+cache size	: 3072 KB
+physical id	: 0
+siblings	: 4
+core id		: 1
+cpu cores	: 2
+apicid		: 3
+initial apicid	: 3
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb invpcid_single pti ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp md_clear flush_l1d
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit
+bogomips	: 5399.81
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+
+Memory information:
+MemTotal:        3945388 kB
+MemFree:         1445864 kB
+MemAvailable:    2529924 kB
+Buffers:          173684 kB
+Cached:          1207984 kB
+SwapCached:        86232 kB
+Active:          1229848 kB
+Inactive:         938096 kB
+Active(anon):     379708 kB
+Inactive(anon):   570292 kB
+Active(file):     850140 kB
+Inactive(file):   367804 kB
+Unevictable:       15916 kB
+Mlocked:               0 kB
+SwapTotal:       2097148 kB
+SwapFree:        2009852 kB
+Dirty:                28 kB
+Writeback:             0 kB
+AnonPages:        715636 kB
+Mapped:           306332 kB
+Shmem:            163724 kB
+KReclaimable:     147844 kB
+Slab:             200588 kB
+SReclaimable:     147844 kB
+SUnreclaim:        52744 kB
+KernelStack:        8192 kB
+PageTables:        33236 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:     4069840 kB
+Committed_AS:    4658964 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:       24508 kB
+VmallocChunk:          0 kB
+Percpu:             1488 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:         0 kB
+ShmemHugePages:        0 kB
+ShmemPmdMapped:        0 kB
+CmaTotal:              0 kB
+CmaFree:               0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+Hugetlb:               0 kB
+DirectMap4k:      240948 kB
+DirectMap2M:     3868672 kB
+DirectMap1G:           0 kB
+
+Hard disk information:
+fdisk: cannot open /dev/loop0: Permission denied
+fdisk: cannot open /dev/loop1: Permission denied
+fdisk: cannot open /dev/loop2: Permission denied
+fdisk: cannot open /dev/loop3: Permission denied
+fdisk: cannot open /dev/loop4: Permission denied
+fdisk: cannot open /dev/loop5: Permission denied
+fdisk: cannot open /dev/loop6: Permission denied
+fdisk: cannot open /dev/loop7: Permission denied
+fdisk: cannot open /dev/sda: Permission denied
+fdisk: cannot open /dev/loop8: Permission denied
+fdisk: cannot open /dev/loop9: Permission denied
+fdisk: cannot open /dev/loop10: Permission denied
+fdisk: cannot open /dev/loop11: Permission denied
+fdisk: cannot open /dev/loop12: Permission denied
+fdisk: cannot open /dev/loop13: Permission denied
+fdisk: cannot open /dev/loop14: Permission denied
+File system(Mounted):
+sysfs on /sys type sysfs (rw,nosuid,nodev,noexec,relatime)
+proc on /proc type proc (rw,nosuid,nodev,noexec,relatime)
+udev on /dev type devtmpfs (rw,nosuid,relatime,size=1948356k,nr_inodes=487089,mode=755)
+devpts on /dev/pts type devpts (rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=000)
+tmpfs on /run type tmpfs (rw,nosuid,noexec,relatime,size=394540k,mode=755)
+/dev/sda8 on / type ext4 (rw,relatime,errors=remount-ro)
+securityfs on /sys/kernel/security type securityfs (rw,nosuid,nodev,noexec,relatime)
+tmpfs on /dev/shm type tmpfs (rw,nosuid,nodev)
+tmpfs on /run/lock type tmpfs (rw,nosuid,nodev,noexec,relatime,size=5120k)
+tmpfs on /sys/fs/cgroup type tmpfs (ro,nosuid,nodev,noexec,mode=755)
+cgroup on /sys/fs/cgroup/unified type cgroup2 (rw,nosuid,nodev,noexec,relatime,nsdelegate)
+cgroup on /sys/fs/cgroup/systemd type cgroup (rw,nosuid,nodev,noexec,relatime,xattr,name=systemd)
+pstore on /sys/fs/pstore type pstore (rw,nosuid,nodev,noexec,relatime)
+efivarfs on /sys/firmware/efi/efivars type efivarfs (rw,nosuid,nodev,noexec,relatime)
+cgroup on /sys/fs/cgroup/hugetlb type cgroup (rw,nosuid,nodev,noexec,relatime,hugetlb)
+cgroup on /sys/fs/cgroup/net_cls,net_prio type cgroup (rw,nosuid,nodev,noexec,relatime,net_cls,net_prio)
+cgroup on /sys/fs/cgroup/perf_event type cgroup (rw,nosuid,nodev,noexec,relatime,perf_event)
+cgroup on /sys/fs/cgroup/cpuset type cgroup (rw,nosuid,nodev,noexec,relatime,cpuset)
+cgroup on /sys/fs/cgroup/cpu,cpuacct type cgroup (rw,nosuid,nodev,noexec,relatime,cpu,cpuacct)
+cgroup on /sys/fs/cgroup/pids type cgroup (rw,nosuid,nodev,noexec,relatime,pids)
+cgroup on /sys/fs/cgroup/rdma type cgroup (rw,nosuid,nodev,noexec,relatime,rdma)
+cgroup on /sys/fs/cgroup/memory type cgroup (rw,nosuid,nodev,noexec,relatime,memory)
+cgroup on /sys/fs/cgroup/blkio type cgroup (rw,nosuid,nodev,noexec,relatime,blkio)
+cgroup on /sys/fs/cgroup/devices type cgroup (rw,nosuid,nodev,noexec,relatime,devices)
+cgroup on /sys/fs/cgroup/freezer type cgroup (rw,nosuid,nodev,noexec,relatime,freezer)
+systemd-1 on /proc/sys/fs/binfmt_misc type autofs (rw,relatime,fd=26,pgrp=1,timeout=0,minproto=5,maxproto=5,direct,pipe_ino=16525)
+mqueue on /dev/mqueue type mqueue (rw,relatime)
+debugfs on /sys/kernel/debug type debugfs (rw,relatime)
+hugetlbfs on /dev/hugepages type hugetlbfs (rw,relatime,pagesize=2M)
+configfs on /sys/kernel/config type configfs (rw,relatime)
+fusectl on /sys/fs/fuse/connections type fusectl (rw,relatime)
+/var/lib/snapd/snaps/gnome-characters_399.snap on /snap/gnome-characters/399 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/var/lib/snapd/snaps/core_8689.snap on /snap/core/8689 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/var/lib/snapd/snaps/gnome-characters_495.snap on /snap/gnome-characters/495 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/var/lib/snapd/snaps/gtk-common-themes_1474.snap on /snap/gtk-common-themes/1474 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/var/lib/snapd/snaps/gnome-logs_81.snap on /snap/gnome-logs/81 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/var/lib/snapd/snaps/gnome-system-monitor_127.snap on /snap/gnome-system-monitor/127 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/var/lib/snapd/snaps/gnome-logs_93.snap on /snap/gnome-logs/93 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/var/lib/snapd/snaps/gnome-calculator_544.snap on /snap/gnome-calculator/544 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/var/lib/snapd/snaps/core18_1668.snap on /snap/core18/1668 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/var/lib/snapd/snaps/core18_1705.snap on /snap/core18/1705 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/var/lib/snapd/snaps/gnome-system-monitor_135.snap on /snap/gnome-system-monitor/135 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/var/lib/snapd/snaps/gtk-common-themes_1440.snap on /snap/gtk-common-themes/1440 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/var/lib/snapd/snaps/gnome-3-28-1804_116.snap on /snap/gnome-3-28-1804/116 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/var/lib/snapd/snaps/gnome-calculator_704.snap on /snap/gnome-calculator/704 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/var/lib/snapd/snaps/core_8935.snap on /snap/core/8935 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/dev/sda1 on /boot/efi type vfat (rw,relatime,fmask=0077,dmask=0077,codepage=437,iocharset=iso8859-1,shortname=mixed,errors=remount-ro)
+tmpfs on /run/user/1000 type tmpfs (rw,nosuid,nodev,relatime,size=394536k,mode=700,uid=1000,gid=1000)
+gvfsd-fuse on /run/user/1000/gvfs type fuse.gvfsd-fuse (rw,nosuid,nodev,relatime,user_id=1000,group_id=1000)
+/dev/fuse on /home/george/.cache/doc type fuse (rw,nosuid,nodev,relatime,user_id=0,group_id=0)
+gvfsd-fuse on /home/george/.gvfs type fuse.gvfsd-fuse (rw,nosuid,nodev,relatime,user_id=0,group_id=0)
+(base) ]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/0104[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/0104[00m$ ./system_config2.shchmod +x system_config2.ssh[A(base) ]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/0104[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/0104[00m$ [2Pnano system_config2.sh
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3P./system_config2.shchmod +x system_config2.ssh[A(base) ]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/0104[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/0104[00m$ [2Pnano system_config2.sh
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ctxt[4P./system_config1.shchmod +x system_config1.ssh[A(base) ]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/0104[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/0104[00m$ [2Pnano system_config1.sh
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3P./system_config1.shchmod +x system_config1.ssh[A(base) ]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/0104[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/0104[00m$ [2Pnano system_config1.sh
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?1049h[22;0;0t[1;24r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[49m(B[m[H[2J[22;33H(B[0;7m[ Reading File ](B[m[22;32H(B[0;7m[ Read 12 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                  system_config1.sh                             [1;79H(B[m[23d(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Uncut Text(B[0;7m^T(B[m To Linter (B[0;7m^_(B[m Go To Line[22d[3d[49m[36m#!/bin/bash[5d(B[0;1m[34mecho[39m(B[m [32m-e[39m(B[m (B[0;1m[33m"Your username: $USER\n"[6d[34mecho[39m(B[m [32m-e[39m(B[m (B[0;1m[33m"Your current shell: $SHELL\n"[7d[34mecho[39m(B[m [32m-e[39m(B[m (B[0;1m[33m"You home directory: $HOME\n"[8d[34mecho[39m(B[m [32m-e[39m(B[m (B[0;1m[33m"Your operating system type:\n"[9d[39m(B[muname -o[10d(B[0;1m[34mecho[39m(B[m [32m-e[39m(B[m (B[0;1m[33m"\nYour current path setting: $PATH\n"[11d[34mecho[39m(B[m [32m-e[39m(B[m (B[0;1m[33m"Your current working directory:"[12d[39m(B[mpwd[13d(B[0;1m[34mecho[39m(B[m [32m-e[39m(B[m (B[0;1m[33m"\n Number of users currently logged in:"[14d[39m(B[mw[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[22d[J[24;80H[?12l[?25h[24;1H[?1049l[23;0;0t[?1l>(base) ]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/0104[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/0104[00m$ nano system_config1.sh[1P.sh2.sh
+[?1049h[22;0;0t[1;24r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[49m(B[m[H[2J[22;33H(B[0;7m[ Reading File ](B[m[22;32H(B[0;7m[ Read 16 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                  system_config2.sh                             [1;79H(B[m[23d(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Uncut Text(B[0;7m^T(B[m To Linter (B[0;7m^_(B[m Go To Line[22d[3d[49m[36m#!/bin/bash[5d(B[0;1m[34mecho[39m(B[m [32m-e[39m(B[m (B[0;1m[33m"Your OS and version, release number:"[6d[39m(B[mlsb_release -a[7d(B[0;1m[34mecho[39m(B[m [32m-e[39m(B[m (B[0;1m[33m"\nYour linux kernel version:"[8d[39m(B[muname [32m-r[9d(B[0;1m[34mecho[39m(B[m [32m-e[39m(B[m (B[0;1m[33m"\nAll available shells:"[10d[34mcat[39m(B[m /etc/shells[11d(B[0;1m[34mecho[39m(B[m [32m-e[39m(B[m (B[0;1m[33m"\nCPU information:"[12d[34mcat[39m(B[m /proc/cpuinfo[13d(B[0;1m[34mecho[39m(B[m [32m-e[39m(B[m (B[0;1m[33m"\nMemory information:"[14d[34mcat[39m(B[m /proc/meminfo[15d(B[0;1m[34mecho[39m(B[m [32m-e[39m(B[m (B[0;1m[33m"\nHard disk information:"[16d[39m(B[mfdisk -l[17d(B[0;1m[34mecho[39m(B[m [32m-e[39m(B[m (B[0;1m[33m"File system(Mounted):"[18d[39m(B[mmount -l[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[17d[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l [?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l [?12l[?25h[?25l[C[?12l[?25h[?25l[1;71H(B[0;7mModified(B[m[17;10H(B[0;1m[33m\File system(Mounted):"[17;11H[39m(B[m[?12l[?25h[?25l(B[0;1m[33mnFile system(Mounted):"[17;12H[39m(B[m[?12l[?25h[?25l[22d[K[18;9H[?12l[?25h[?25l[19d[?12l[?25h[?25l[22d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)                   [23;1H Y(B[m Yes[K[24d(B[0;7m N(B[m No  [14G   (B[0;7m^C(B[m Cancel[K[22;63H[?12l[?25h[?25l[23d(B[0;7m^G(B[m Get Help[23;21H(B[0;7mM-D(B[m DOS Format[41G(B[0;7mM-A(B[m Append[23;61H(B[0;7mM-B(B[m Backup File[24d(B[0;7m^C(B[m Cancel[17G    (B[0;7mM-M(B[m Mac Format[41G(B[0;7mM-P(B[m Prepend[24;61H(B[0;7m^T(B[m To Files[22d(B[0;7mFile Name to Write: system_config2.sh                        (B[m[22;38H[?12l[?25h[?25l[K[1;79H[1;71H(B[0;7m        (B[m[22;32H(B[0;7m[ Wrote 16 lines ](B[m[J[24;80H[?12l[?25h[24;1H[?1049l[23;0;0t[?1l>(base) ]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/0104[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/0104[00m$ su[K[Knano system_config2.sh1.sh[3P./system_config2.shchmod +x system_config2.ssh
+(base) ]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/0104[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/0104[00m$ chmod +x system_config2.ssh[A(base) ]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/0104[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/0104[00m$ [2Pnano system_config2.sh
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C1.sh[3P./system_config2.shs./system_config2.shu./system_config2.shd./system_config2.sho./system_config2.sh ./system_config2.sh [A(base) ]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/0104[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/0104[00m$ [C[C[C[C[C
+
+[sudo] password for george: 
+Your OS and version, release number:
+No LSB modules are available.
+Distributor ID:	Ubuntu
+Description:	Ubuntu 18.04.4 LTS
+Release:	18.04
+Codename:	bionic
+
+Your linux kernel version:
+5.3.0-42-generic
+
+All available shells:
+# /etc/shells: valid login shells
+/bin/sh
+/bin/bash
+/bin/rbash
+/bin/dash
+
+CPU information:
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 142
+model name	: Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz
+stepping	: 9
+microcode	: 0xca
+cpu MHz		: 807.788
+cache size	: 3072 KB
+physical id	: 0
+siblings	: 4
+core id		: 0
+cpu cores	: 2
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb invpcid_single pti ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp md_clear flush_l1d
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit
+bogomips	: 5399.81
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 1
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 142
+model name	: Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz
+stepping	: 9
+microcode	: 0xca
+cpu MHz		: 813.184
+cache size	: 3072 KB
+physical id	: 0
+siblings	: 4
+core id		: 1
+cpu cores	: 2
+apicid		: 2
+initial apicid	: 2
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb invpcid_single pti ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp flush_l1d
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit
+bogomips	: 5399.81
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 2
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 142
+model name	: Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz
+stepping	: 9
+microcode	: 0xca
+cpu MHz		: 810.763
+cache size	: 3072 KB
+physical id	: 0
+siblings	: 4
+core id		: 0
+cpu cores	: 2
+apicid		: 1
+initial apicid	: 1
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb invpcid_single pti ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp md_clear flush_l1d
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit
+bogomips	: 5399.81
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 3
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 142
+model name	: Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz
+stepping	: 9
+microcode	: 0xca
+cpu MHz		: 804.087
+cache size	: 3072 KB
+physical id	: 0
+siblings	: 4
+core id		: 1
+cpu cores	: 2
+apicid		: 3
+initial apicid	: 3
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb invpcid_single pti ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp md_clear flush_l1d
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit
+bogomips	: 5399.81
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+
+Memory information:
+MemTotal:        3945388 kB
+MemFree:         1443160 kB
+MemAvailable:    2527304 kB
+Buffers:          173756 kB
+Cached:          1210160 kB
+SwapCached:        86232 kB
+Active:          1237644 kB
+Inactive:         931108 kB
+Active(anon):     380428 kB
+Inactive(anon):   570296 kB
+Active(file):     857216 kB
+Inactive(file):   360812 kB
+Unevictable:       17996 kB
+Mlocked:               0 kB
+SwapTotal:       2097148 kB
+SwapFree:        2009852 kB
+Dirty:               428 kB
+Writeback:             0 kB
+AnonPages:        716588 kB
+Mapped:           306684 kB
+Shmem:            165880 kB
+KReclaimable:     147844 kB
+Slab:             200504 kB
+SReclaimable:     147844 kB
+SUnreclaim:        52660 kB
+KernelStack:        8192 kB
+PageTables:        33024 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:     4069840 kB
+Committed_AS:    4660604 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:       24524 kB
+VmallocChunk:          0 kB
+Percpu:             1488 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:         0 kB
+ShmemHugePages:        0 kB
+ShmemPmdMapped:        0 kB
+CmaTotal:              0 kB
+CmaFree:               0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+Hugetlb:               0 kB
+DirectMap4k:      240948 kB
+DirectMap2M:     3868672 kB
+DirectMap1G:           0 kB
+
+Hard disk information:
+[1mDisk /dev/loop0: 14.8 MiB, 15462400 bytes, 30200 sectors
+[0mUnits: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+[1mDisk /dev/loop1: 54.7 MiB, 57294848 bytes, 111904 sectors
+[0mUnits: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+[1mDisk /dev/loop2: 91.4 MiB, 95805440 bytes, 187120 sectors
+[0mUnits: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+[1mDisk /dev/loop3: 3.7 MiB, 3825664 bytes, 7472 sectors
+[0mUnits: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+[1mDisk /dev/loop4: 44.9 MiB, 47063040 bytes, 91920 sectors
+[0mUnits: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+[1mDisk /dev/loop5: 4.3 MiB, 4464640 bytes, 8720 sectors
+[0mUnits: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+[1mDisk /dev/loop6: 160.2 MiB, 167931904 bytes, 327992 sectors
+[0mUnits: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+[1mDisk /dev/loop7: 93.8 MiB, 98336768 bytes, 192064 sectors
+[0mUnits: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+[1mDisk /dev/sda: 931.5 GiB, 1000204886016 bytes, 1953525168 sectors
+[0mUnits: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+Disklabel type: gpt
+Disk identifier: 0E55ACF8-1340-43F9-B0D1-034E1A6E78C5
+
+[1mDevice[0m     [1m     Start[0m [1m       End[0m [1m  Sectors[0m [1m  Size[0m [1mType[0m
+/dev/sda1        2048     534527    532480   260M EFI System
+/dev/sda2      534528     567295     32768    16M Microsoft reserved
+/dev/sda3      567296  483438591 482871296 230.3G Microsoft basic data
+/dev/sda4   483438592 1179758591 696320000   332G Microsoft basic data
+/dev/sda5  1302638592 1917036543 614397952   293G Microsoft basic data
+/dev/sda6  1917038592 1919045631   2007040   980M Windows recovery environment
+/dev/sda7  1919045632 1953511423  34465792  16.4G Microsoft basic data
+/dev/sda8  1179758592 1302638591 122880000  58.6G Linux filesystem
+
+Partition table entries are not in disk order.
+
+
+
+
+[1mDisk /dev/loop8: 14.8 MiB, 15466496 bytes, 30208 sectors
+[0mUnits: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+[1mDisk /dev/loop9: 3.7 MiB, 3862528 bytes, 7544 sectors
+[0mUnits: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+[1mDisk /dev/loop10: 956 KiB, 978944 bytes, 1912 sectors
+[0mUnits: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+[1mDisk /dev/loop11: 4.2 MiB, 4403200 bytes, 8600 sectors
+[0mUnits: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+[1mDisk /dev/loop12: 48.3 MiB, 50642944 bytes, 98912 sectors
+[0mUnits: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+[1mDisk /dev/loop13: 956 KiB, 978944 bytes, 1912 sectors
+[0mUnits: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+[1mDisk /dev/loop14: 55 MiB, 57614336 bytes, 112528 sectors
+[0mUnits: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+File system(Mounted):
+sysfs on /sys type sysfs (rw,nosuid,nodev,noexec,relatime)
+proc on /proc type proc (rw,nosuid,nodev,noexec,relatime)
+udev on /dev type devtmpfs (rw,nosuid,relatime,size=1948356k,nr_inodes=487089,mode=755)
+devpts on /dev/pts type devpts (rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=000)
+tmpfs on /run type tmpfs (rw,nosuid,noexec,relatime,size=394540k,mode=755)
+/dev/sda8 on / type ext4 (rw,relatime,errors=remount-ro)
+securityfs on /sys/kernel/security type securityfs (rw,nosuid,nodev,noexec,relatime)
+tmpfs on /dev/shm type tmpfs (rw,nosuid,nodev)
+tmpfs on /run/lock type tmpfs (rw,nosuid,nodev,noexec,relatime,size=5120k)
+tmpfs on /sys/fs/cgroup type tmpfs (ro,nosuid,nodev,noexec,mode=755)
+cgroup on /sys/fs/cgroup/unified type cgroup2 (rw,nosuid,nodev,noexec,relatime,nsdelegate)
+cgroup on /sys/fs/cgroup/systemd type cgroup (rw,nosuid,nodev,noexec,relatime,xattr,name=systemd)
+pstore on /sys/fs/pstore type pstore (rw,nosuid,nodev,noexec,relatime)
+efivarfs on /sys/firmware/efi/efivars type efivarfs (rw,nosuid,nodev,noexec,relatime)
+cgroup on /sys/fs/cgroup/hugetlb type cgroup (rw,nosuid,nodev,noexec,relatime,hugetlb)
+cgroup on /sys/fs/cgroup/net_cls,net_prio type cgroup (rw,nosuid,nodev,noexec,relatime,net_cls,net_prio)
+cgroup on /sys/fs/cgroup/perf_event type cgroup (rw,nosuid,nodev,noexec,relatime,perf_event)
+cgroup on /sys/fs/cgroup/cpuset type cgroup (rw,nosuid,nodev,noexec,relatime,cpuset)
+cgroup on /sys/fs/cgroup/cpu,cpuacct type cgroup (rw,nosuid,nodev,noexec,relatime,cpu,cpuacct)
+cgroup on /sys/fs/cgroup/pids type cgroup (rw,nosuid,nodev,noexec,relatime,pids)
+cgroup on /sys/fs/cgroup/rdma type cgroup (rw,nosuid,nodev,noexec,relatime,rdma)
+cgroup on /sys/fs/cgroup/memory type cgroup (rw,nosuid,nodev,noexec,relatime,memory)
+cgroup on /sys/fs/cgroup/blkio type cgroup (rw,nosuid,nodev,noexec,relatime,blkio)
+cgroup on /sys/fs/cgroup/devices type cgroup (rw,nosuid,nodev,noexec,relatime,devices)
+cgroup on /sys/fs/cgroup/freezer type cgroup (rw,nosuid,nodev,noexec,relatime,freezer)
+systemd-1 on /proc/sys/fs/binfmt_misc type autofs (rw,relatime,fd=26,pgrp=1,timeout=0,minproto=5,maxproto=5,direct,pipe_ino=16525)
+mqueue on /dev/mqueue type mqueue (rw,relatime)
+debugfs on /sys/kernel/debug type debugfs (rw,relatime)
+hugetlbfs on /dev/hugepages type hugetlbfs (rw,relatime,pagesize=2M)
+configfs on /sys/kernel/config type configfs (rw,relatime)
+fusectl on /sys/fs/fuse/connections type fusectl (rw,relatime)
+/var/lib/snapd/snaps/gnome-characters_399.snap on /snap/gnome-characters/399 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/var/lib/snapd/snaps/core_8689.snap on /snap/core/8689 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/var/lib/snapd/snaps/gnome-characters_495.snap on /snap/gnome-characters/495 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/var/lib/snapd/snaps/gtk-common-themes_1474.snap on /snap/gtk-common-themes/1474 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/var/lib/snapd/snaps/gnome-logs_81.snap on /snap/gnome-logs/81 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/var/lib/snapd/snaps/gnome-system-monitor_127.snap on /snap/gnome-system-monitor/127 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/var/lib/snapd/snaps/gnome-logs_93.snap on /snap/gnome-logs/93 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/var/lib/snapd/snaps/gnome-calculator_544.snap on /snap/gnome-calculator/544 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/var/lib/snapd/snaps/core18_1668.snap on /snap/core18/1668 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/var/lib/snapd/snaps/core18_1705.snap on /snap/core18/1705 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/var/lib/snapd/snaps/gnome-system-monitor_135.snap on /snap/gnome-system-monitor/135 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/var/lib/snapd/snaps/gtk-common-themes_1440.snap on /snap/gtk-common-themes/1440 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/var/lib/snapd/snaps/gnome-3-28-1804_116.snap on /snap/gnome-3-28-1804/116 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/var/lib/snapd/snaps/gnome-calculator_704.snap on /snap/gnome-calculator/704 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/var/lib/snapd/snaps/core_8935.snap on /snap/core/8935 type squashfs (ro,nodev,relatime,x-gdu.hide)
+/dev/sda1 on /boot/efi type vfat (rw,relatime,fmask=0077,dmask=0077,codepage=437,iocharset=iso8859-1,shortname=mixed,errors=remount-ro)
+tmpfs on /run/user/1000 type tmpfs (rw,nosuid,nodev,relatime,size=394536k,mode=700,uid=1000,gid=1000)
+gvfsd-fuse on /run/user/1000/gvfs type fuse.gvfsd-fuse (rw,nosuid,nodev,relatime,user_id=1000,group_id=1000)
+/dev/fuse on /home/george/.cache/doc type fuse (rw,nosuid,nodev,relatime,user_id=0,group_id=0)
+gvfsd-fuse on /home/george/.gvfs type fuse.gvfsd-fuse (rw,nosuid,nodev,relatime,user_id=0,group_id=0)
+(base) ]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/0104[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/0104[00m$ sudo nano calculator.sh[1P[1P[1P[1P[1P
+[?1049h[22;0;0t[1;24r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[22;35H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 2.9.3                    calculator.sh                               [1;79H(B[m[23d(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Uncut Text(B[0;7m^T(B[m To Linter (B[0;7m^_(B[m Go To Line[22d[3d[39;49m(B[m[?12l[?25h[?25l[1;71H(B[0;7mModified(B[m[3d[36m#[39m(B[m[?12l[?25h[?25l[36m![39m(B[m[?12l[?25h[?25l[36mn[39m(B[m[?12l[?25h[?25l [?12l[?25h[?25l[36mb[39m(B[m[?12l[?25h[?25l[36mi[39m(B[m[?12l[?25h[?25l[36mn[39m(B[m[?12l[?25h[?25l[36m/[39m(B[m[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[K[?12l[?25h[?25l[36m#[39m(B[m[?12l[?25h[?25l[36m![39m(B[m[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[4d[?12l[?25h[?25l[3;3H[?12l[?25h[?25l[36mb[39m(B[m[?12l[?25h[?25l[36mi[39m(B[m[?12l[?25h[?25l[36mn[39m(B[m[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[22d[K[3;3H[?12l[?25h[?25l[?12l[?25h[?25l[C[?12l[?25h[?25l[36m/bin[39m(B[m[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[36m/[39m(B[m[?12l[?25h[?25l[36mb[39m(B[m[?12l[?25h[?25l[36ma[39m(B[m[?12l[?25h[?25l[36ms[39m(B[m[?12l[?25h[?25l[36mh[39m(B[m[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25lv[?12l[?25h[?25l[K[?12l[?25h[?25lc[?12l[?25h[?25ll[?12l[?25h[?25le[?12l[?25h[?25la[?12l[?25h[?25lr[?12l[?25h[?25l[6d[?12l[?25h[?25ln[?12l[?25h[?25l[32m=[39m(B[m[?12l[?25h[?25l0[?12l[?25h[?25l[7d[?12l[?25h[?25li[?12l[?25h[?25l[32m=[39m(B[m[?12l[?25h[?25l"[?12l[?25h[?25ly[?12l[?25h[?25l(B[0;1m[33m"y"[39m(B[m[?12l[?25h[?25l[8d[?12l[?25h[?25le[?12l[?25h[?25lc[?12l[?25h[?25lg[?12l[?25h[?25lh[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lh[?12l[?25h[?25l(B[0;1m[34mecho[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l [?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l [32m:[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[K[?12l[?25h[?25l "[?12l[?25h[?25lE[?12l[?25h[?25ln[?12l[?25h[?25lt[?12l[?25h[?25le[?12l[?25h[?25lr[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l a[?12l[?25h[?25ld[?12l[?25h[?25ld[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[42m [49m(B[m[K[?12l[?25h[?25l [?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l m[?12l[?25h[?25l[42m [49m(B[m[K[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l f[?12l[?25h[?25l[32mfi[39m(B[m[?12l[?25h[?25lfir[?12l[?25h[?25ls[?12l[?25h[?25lt[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l n[?12l[?25h[?25lu[?12l[?25h[?25lm[?12l[?25h[?25lb[?12l[?25h[?25le[?12l[?25h[?25lr[?12l[?25h[?25l[32m:[39m(B[m[?12l[?25h[?25l[6G(B[0;1m[33m"Enter first number:"[39m(B[m[?12l[?25h[?25l[9d[?12l[?25h[?25lr[?12l[?25h[?25le[?12l[?25h[?25la[?12l[?25h[?25l[32mread[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l n[?12l[?25h[?25l1[?12l[?25h[?25l[10d[?12l[?25h[?25le[?12l[?25h[?25lc[?12l[?25h[?25lh[?12l[?25h[?25l(B[0;1m[34mecho[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l [32m:[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[K[?12l[?25h[?25l "[?12l[?25h[?25lE[?12l[?25h[?25ln[?12l[?25h[?25lt[?12l[?25h[?25le[?12l[?25h[?25lr[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l s[?12l[?25h[?25le[?12l[?25h[?25lc[?12l[?25h[?25lo[?12l[?25h[?25ln[?12l[?25h[?25ld[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l n[?12l[?25h[?25lu[?12l[?25h[?25lm[?12l[?25h[?25lb[?12l[?25h[?25le[?12l[?25h[?25lr[?12l[?25h[?25l[32m:[39m(B[m[?12l[?25h[?25lZ[?12l[?25h[?25l [?12l[?25h[?25l[6G(B[0;1m[33m"Enter second number:"[39m(B[m[?12l[?25h[?25l[11d[?12l[?25h[?25lr[?12l[?25h[?25le[?12l[?25h[?25la[?12l[?25h[?25l[32mread[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l m[?12l[?25h[?25ln[?12l[?25h[?25l [?12l[?25h[?25l[42m [49m(B[m[K[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l  n[?12l[?25h[?25l2[?12l[?25h[?25l[12d[?12l[?25h[?25lw[?12l[?25h[?25lh[?12l[?25h[?25li[?12l[?25h[?25ll[?12l[?25h[?25l[32mwhile[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l [32m[[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l [32m$[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[K[?12l[?25h[?25l [32m$[39m(B[m[?12l[?25h[?25l(B[0;1m[31m$i[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l [32m=[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l "[?12l[?25h[?25ly[?12l[?25h[?25l(B[0;1m[33m"y"[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l [32m}[39m(B[m[?12l[?25h[?25l[32m][39m(B[m[?12l[?25h[?25l [?12l[?25h[?25l[42m [49m(B[m[K[?12l[?25h[?25l [32m][39m(B[m[?12l[?25h[?25l[13d[?12l[?25h[?25ld[?12l[?25h[?25l[32mdo[39m(B[m[?12l[?25h[?25l[14d[?12l[?25h[?25le[?12l[?25h[?25lc[?12l[?25h[?25lh[?12l[?25h[?25li[?12l[?25h[?25lo[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l(B[0;1m[34mecho[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l -[?12l[?25h[?25l[32m-e[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l "[?12l[?25h[?25l[32m\[39m(B[m[?12l[?25h[?25ln[?12l[?25h[?25lM[?12l[?25h[?25l [?12l[?25h[?25l-[?12l[?25h[?25l-[?12l[?25h[?25l-[?12l[?25h[?25l-[?12l[?25h[?25l-[?12l[?25h[?25lM[?12l[?25h[?25lE[?12l[?25h[?25lN[?12l[?25h[?25lU[?12l[?25h[?25l-[?12l[?25h[?25l-[?12l[?25h[?25l-[?12l[?25h[?25l-[?12l[?25h[?25l-[?12l[?25h[?25l[14;9H(B[0;1m[33m"\n-----MENU-----"[39m(B[m[?12l[?25h[?25l[15d[?12l[?25h[?25le[?12l[?25h[?25lc[?12l[?25h[?25lh[?12l[?25h[?25l(B[0;1m[34mecho[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l [32m:[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l [?12l[?25h[?25l[42m [49m(B[m[K[?12l[?25h[?25l [32m:[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[K[?12l[?25h[?25l "[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l 1[?12l[?25h[?25l.[?12l[?25h[?25lA[?12l[?25h[?25ld[?12l[?25h[?25ld[?12l[?25h[?25li[?12l[?25h[?25lt[?12l[?25h[?25li[?12l[?25h[?25lp[?12l[?25h[?25lo[?12l[?25h[?25ln[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lt[?12l[?25h[?25li[?12l[?25h[?25lo[?12l[?25h[?25ln[?12l[?25h[?25l[6G(B[0;1m[33m" 1.Addition"[39m(B[m[?12l[?25h[?25l[16d[?12l[?25h[?25l2[?12l[?25h[?25l.[?12l[?25h[?25lS[?12l[?25h[?25lu[?12l[?25h[?25lb[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[K[?12l[?25h[?25le[?12l[?25h[?25lc[?12l[?25h[?25lh[?12l[?25h[?25l(B[0;1m[34mecho[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l "[?12l[?25h[?25l2[?12l[?25h[?25l.[?12l[?25h[?25lS[?12l[?25h[?25lu[?12l[?25h[?25lb[?12l[?25h[?25lt[?12l[?25h[?25lr[?12l[?25h[?25la[?12l[?25h[?25lt[?12l[?25h[?25li[?12l[?25h[?25lo[?12l[?25h[?25ln[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25lr[?12l[?25h[?25la[?12l[?25h[?25lction[?12l[?25h[?25lt[?12l[?25h[?25li[?12l[?25h[?25lo[?12l[?25h[?25ln[?12l[?25h[?25l[32m:[39m(B[m[?12l[?25h[?25l [?12l[?25h[?25l[6G(B[0;1m[33m"2.Subtraction"[39m(B[m[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l  (B[0;1m[33m"2.Subtraction"[7G[39m(B[m[?12l[?25h[?25l[1P [?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[?12l[?25h[?25l(B[0;1m[33m 2.Subtraction"[8G[39m(B[m[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[17d[?12l[?25h[?25le[?12l[?25h[?25lc[?12l[?25h[?25lh[?12l[?25h[?25l(B[0;1m[34mecho[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l "[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l 3[?12l[?25h[?25l.[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l [?12l[?25h[?25lM[?12l[?25h[?25lu[?12l[?25h[?25ll[?12l[?25h[?25lt[?12l[?25h[?25li[?12l[?25h[?25lp[?12l[?25h[?25ll[?12l[?25h[?25li[?12l[?25h[?25lc[?12l[?25h[?25la[?12l[?25h[?25lt[?12l[?25h[?25li[?12l[?25h[?25lo[?12l[?25h[?25ln[?12l[?25h[?25l[6G(B[0;1m[33m" 3.Multiplication"[39m(B[m[?12l[?25h[?25l[18d[?12l[?25h[?25le[?12l[?25h[?25lc[?12l[?25h[?25lh[?12l[?25h[?25l(B[0;1m[34mecho[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l [32m:[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l [?12l[?25h[?25l[42m [49m(B[m[K[?12l[?25h[?25l "[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l 4[?12l[?25h[?25l.[?12l[?25h[?25lD[?12l[?25h[?25li[?12l[?25h[?25lv[?12l[?25h[?25li[?12l[?25h[?25ls[?12l[?25h[?25li[?12l[?25h[?25lo[?12l[?25h[?25ln[?12l[?25h[?25l[6G(B[0;1m[33m" 4.Division"[39m(B[m[?12l[?25h[?25l[19d[?12l[?25h[?25le[?12l[?25h[?25lc[?12l[?25h[?25lh[?12l[?25h[?25l(B[0;1m[34mecho[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l "[?12l[?25h[?25lE[?12l[?25h[?25ln[?12l[?25h[?25lt[?12l[?25h[?25le[?12l[?25h[?25lr[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l y[?12l[?25h[?25lo[?12l[?25h[?25lu[?12l[?25h[?25lr[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l c[?12l[?25h[?25lh[?12l[?25h[?25lo[?12l[?25h[?25li[?12l[?25h[?25lc[?12l[?25h[?25le[?12l[?25h[?25l[32m:[39m(B[m[?12l[?25h[?25l[6G(B[0;1m[33m"Enter your choice:"[39m(B[m[?12l[?25h[?25l[20d[?12l[?25h[?25lr[?12l[?25h[?25le[?12l[?25h[?25la[?12l[?25h[?25l[32mread[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l c[?12l[?25h[?25lh[?12l[?25h[?25l[21d[?12l[?25h[?25lc[?12l[?25h[?25la[?12l[?25h[?25ls[?12l[?25h[?25l[32mcase[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l [32m$[39m(B[m[?12l[?25h[?25l(B[0;1m[31m$c[39m(B[m[?12l[?25h[?25l(B[0;1m[31mh[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l o[?12l[?25h[?25li[?12l[?25h[?25ln[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[42m [49m(B[m[K[?12l[?25h[?25l i[?12l[?25h[?25l[32min[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l7[2;22r8[22d[10S[1;24r[2;1H[K[12d[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[1K 1[?12l[?25h[?25l[32m)[39m(B[m[?12l[?25h[?25l[13d[?12l[?25h[?25l[32m\[39m(B[m[?12l[?25h[?25l[K[?12l[?25h[?25l[12;10H[?12l[?25h[?25ln[?12l[?25h[?25l[32m=[39m(B[m[?12l[?25h[?25l[32m`[39m(B[m[?12l[?25h[?25le[?12l[?25h[?25lx[?12l[?25h[?25lp[?12l[?25h[?25lr[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l [32m$[39m(B[m[?12l[?25h[?25l(B[0;1m[31m$n[39m(B[m[?12l[?25h[?25l(B[0;1m[31m1[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l +[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l [32m$[39m(B[m[?12l[?25h[?25l(B[0;1m[31m$n[39m(B[m[?12l[?25h[?25l(B[0;1m[31m2[39m(B[m[?12l[?25h[?25l[32m`[39m(B[m[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[1P[?12l[?25h[?25l (B[0;1m[31m$n1[39m(B[m + (B[0;1m[31m$n2(B[0m[32m`[12;18H[39m(B[m[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l n[32m=`[39m(B[mexpr (B[0;1m[31m$n1[39m(B[m + (B[0;1m[31m$n2(B[0m[32m`[12;11H[39m(B[m[?12l[?25h[?25l[?12l[?25h[?25l [?12l[?25h[?25l[1P[?12l[?25h[?25ln[?12l[?25h[?25l [32m=`[39m(B[mexpr (B[0;1m[31m$n1[39m(B[m + (B[0;1m[31m$n2(B[0m[32m`[12;12H[39m(B[m[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25le[?12l[?25h[?25lx[?12l[?25h[?25lp[?12l[?25h[?25lr[?12l[?25h[?25l [?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l [?12l[?25h[?25l+[?12l[?25h[?25l [?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[13d[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[1K e[?12l[?25h[?25lc[?12l[?25h[?25lh[?12l[?25h[?25l(B[0;1m[34mecho[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l [32m:[39m(B[m[?12l[?25h[?25lS[?12l[?25h[?25lu[?12l[?25h[?25lm[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l o[?12l[?25h[?25lf[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l t[?12l[?25h[?25lw[?12l[?25h[?25lo[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l m[?12l[?25h[?25l[42m [49m(B[m[K[?12l[?25h[?25l n[?12l[?25h[?25lu[?12l[?25h[?25lm[?12l[?25h[?25lb[?12l[?25h[?25le[?12l[?25h[?25lr[?12l[?25h[?25ls[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l"Sum of two numbers[13;17H[?12l[?25h[?25l[?12l[?25h[?25l[1P[?12l[?25h[?25l"[?12l[?25h[?25lS[?12l[?25h[?25lu[?12l[?25h[?25lm[?12l[?25h[?25l [?12l[?25h[?25lo[?12l[?25h[?25lf[?12l[?25h[?25l [?12l[?25h[?25lt[?12l[?25h[?25lw[?12l[?25h[?25lo[?12l[?25h[?25l [?12l[?25h[?25ln[?12l[?25h[?25lu[?12l[?25h[?25lm[?12l[?25h[?25lb[?12l[?25h[?25le[?12l[?25h[?25lr[?12l[?25h[?25ls[?12l[?25h[?25l[14d[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[13;34H[?12l[?25h[?25l[?12l[?25h[?25ls[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l [32m=[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[13;15H(B[0;1m[33m"Sum of two numbers = "[39m(B[m[?12l[?25h[?25l[32m$[39m(B[m[?12l[?25h[?25l(B[0;1m[31m$n[39m(B[m[?12l[?25h[?25l[32m;[39m(B[m[?12l[?25h[?25l[32m;[39m(B[m[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[A[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[1K 2[?12l[?25h[?25l[32m)[39m(B[m[?12l[?25h[?25ln[?12l[?25h[?25l[32m=[39m(B[m[?12l[?25h[?25le[?12l[?25h[?25lx[?12l[?25h[?25lp[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l [32m=[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l [32m`[39m(B[m[?12l[?25h[?25le[?12l[?25h[?25lx[?12l[?25h[?25lp[?12l[?25h[?25lr[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[32m`[39m(B[mexpr[K[13G[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l [32m`[39m(B[mexpr (B[0;1m[31m$n1[39m(B[m + (B[0;1m[31m$n2(B[0m[32m`[12;14H[39m(B[m[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[?12l[?25h[?25l [32m`[39m(B[mexpr[14G[?12l[?25h[?25l[C[?12l[?25h[?25le[?12l[?25h[?25lx[?12l[?25h[?25lp[?12l[?25h[?25lr[?12l[?25h[?25l[?12l[?25h[?25lr[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l [32m$[39m(B[m[?12l[?25h[?25l(B[0;1m[31m$n[39m(B[m[?12l[?25h[?25l(B[0;1m[31m1[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l -[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l [32m$[39m(B[m[?12l[?25h[?25l(B[0;1m[31m$n[39m(B[m[?12l[?25h[?25l(B[0;1m[31m2[39m(B[m[?12l[?25h[?25l[15d[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[1K e[?12l[?25h[?25lc[?12l[?25h[?25lh[?12l[?25h[?25l(B[0;1m[34mecho[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l "[?12l[?25h[?25lD[?12l[?25h[?25le[?12l[?25h[?25l [?12l[?25h[?25li[?12l[?25h[?25lf[?12l[?25h[?25lf[?12l[?25h[?25le[?12l[?25h[?25lr[?12l[?25h[?25le[?12l[?25h[?25ln[?12l[?25h[?25lc[?12l[?25h[?25le[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l b[?12l[?25h[?25le[?12l[?25h[?25lt[?12l[?25h[?25lw[?12l[?25h[?25le[?12l[?25h[?25le[?12l[?25h[?25ln[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l t[?12l[?25h[?25lw[?12l[?25h[?25lo[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l n[?12l[?25h[?25lu[?12l[?25h[?25lm[?12l[?25h[?25lb[?12l[?25h[?25le[?12l[?25h[?25lr[?12l[?25h[?25ls[?12l[?25h[?25l[32m:[39m(B[m[?12l[?25h[?25l [?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l [32m=[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[15;15H(B[0;1m[33m"Difference between two numbers = "[39m(B[m[?12l[?25h[?25l[32m$[39m(B[m[?12l[?25h[?25l(B[0;1m[31m$n[39m(B[m[?12l[?25h[?25l(B[0;1m[31m2[39m(B[m[?12l[?25h[?25l[32m;[39m(B[m[?12l[?25h[?25l[32m;[39m(B[m[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[32m;[39m(B[m[?12l[?25h[?25l[32m;[39m(B[m[?12l[?25h[?25l[16d[?12l[?25h[?25l[17d[?12l[?25h[?25l[A[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[1K 3[?12l[?25h[?25l[42m[1K [49m(B[m [?12l[?25h[?25l[1K 1[32m)[39m(B[mn [32m=[39m(B[m [32m`[39m(B[mexpr (B[0;1m[31m$n1[39m(B[m + (B[0;1m[31m$n2(B[0m[32m`[17;10H(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Sum of two numbers = "[31m$n(B[0m[32m;;[18;8H[39m(B[m2[32m)[39m(B[mn [32m=[39m(B[m [32m`[39m(B[mexpr (B[0;1m[31m$n1[39m(B[m - (B[0;1m[31m$n2[19;10H[34mecho[39m(B[m (B[0;1m[33m"Difference between two numbers = "[31m$n(B[0m[32m;;[39m[42m [20d[49m(B[m[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l1[?12l[?25h[?25l[C[?12l[?25h[?25ln[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[1P[?12l[?25h[?25l3[32m)[39m(B[mn [32m=[39m(B[m [32m`[39m(B[mexpr (B[0;1m[31m$n1[39m(B[m + (B[0;1m[31m$n2(B[0m[32m`[16;9H[39m(B[m[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[19d[?12l[?25h[?25l[A[?12l[?25h[?25l[1P[?12l[?25h[?25l4[32m)[39m(B[mn [32m=[39m(B[m [32m`[39m(B[mexpr (B[0;1m[31m$n1[39m(B[m - (B[0;1m[31m$n2[18;9H[39m(B[m[?12l[?25h[?25l[19d[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l [?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l [?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[A[?12l[?25h[?25l[C[?12l[?25h[?25l [?12l[?25h[?25l+[?12l[?25h[?25l (B[0;1m[31m$n2(B[0m[32m`[39m(B[m[K[24G[?12l[?25h[?25l[32m\[39m(B[m (B[0;1m[31m$n2(B[0m[32m`[25G[39m(B[m[?12l[?25h[?25l* (B[0;1m[31m$n2(B[0m[32m`[26G[39m(B[m[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[?12l[?25h[?25l[1P[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l-[?12l[?25h[?25l (B[0;1m[31m$n2[39m(B[m[K[?12l[?25h[?25l/ (B[0;1m[31m$n2[39m(B[m[?12l[?25h[?25l  (B[0;1m[31m$n2[39m(B[m[?12l[?25h[?25l (B[0;1m[31m$n2[39m(B[m[K[?12l[?25h[?25l[19d[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[19d[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l(B[0;1m[33mPof two numbers = "[31m$n(B[0m[32m;;[17;17H[39m(B[m[?12l[?25h[?25l(B[0;1m[33mrof two numbers = "[31m$n(B[0m[32m;;[17;18H[39m(B[m[?12l[?25h[?25l(B[0;1m[33moof two numbers = "[31m$n(B[0m[32m;;[17;19H[39m(B[m[?12l[?25h[?25l(B[0;1m[33mdof two numbers = "[31m$n(B[0m[32m;;[17;20H[39m(B[m[?12l[?25h[?25l(B[0;1m[33muof two numbers = "[31m$n(B[0m[32m;;[17;21H[39m(B[m[?12l[?25h[?25l(B[0;1m[33mcof two numbers = "[31m$n(B[0m[32m;;[17;22H[39m(B[m[?12l[?25h[?25l(B[0;1m[33myof two numbers = "[31m$n(B[0m[32m;;[17;23H[39m(B[m[?12l[?25h[?25l[1P[?12l[?25h[?25l(B[0;1m[33mtof two numbers = "[31m$n(B[0m[32m;;[17;23H[39m(B[m[?12l[?25h[?25l(B[0;1m[33m of two numbers = "[31m$n(B[0m[32m;;[17;24H[39m(B[m[?12l[?25h[?25l[18d[?12l[?25h[?25l[19d[?12l[?25h[?25l[20d[?12l[?25h[?25l[21d[?12l[?25h[?25l[A[?12l[?25h[?25l[21d[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l [?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[C[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[C[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l(B[0;1m[33mQtwo numbers = "[31m$n(B[0m[32m;;[39m[42m [19;17H[49m(B[m[?12l[?25h[?25l(B[0;1m[33mutwo numbers = "[31m$n(B[0m[32m;;[39m[42m [19;18H[49m(B[m[?12l[?25h[?25l(B[0;1m[33motwo numbers = "[31m$n(B[0m[32m;;[39m[42m [19;19H[49m(B[m[?12l[?25h[?25l(B[0;1m[33mttwo numbers = "[31m$n(B[0m[32m;;[39m[42m [19;20H[49m(B[m[?12l[?25h[?25l(B[0;1m[33mitwo numbers = "[31m$n(B[0m[32m;;[39m[42m [19;21H[49m(B[m[?12l[?25h[?25l(B[0;1m[33metwo numbers = "[31m$n(B[0m[32m;;[39m[42m [19;22H[49m(B[m[?12l[?25h[?25l(B[0;1m[33mntwo numbers = "[31m$n(B[0m[32m;;[39m[42m [19;23H[49m(B[m[?12l[?25h[?25l(B[0;1m[33mttwo numbers = "[31m$n(B[0m[32m;;[39m[42m [19;24H[49m(B[m[?12l[?25h[?25l(B[0;1m[33m two numbers = "[31m$n(B[0m[32m;;[39m[42m [19;25H[49m(B[m[?12l[?25h[?25l(B[0;1m[33motwo numbers = "[31m$n(B[0m[32m;;[39m[42m [19;26H[49m(B[m[?12l[?25h[?25l(B[0;1m[33mftwo numbers = "[31m$n(B[0m[32m;;[39m[42m [19;27H[49m(B[m[?12l[?25h[?25l(B[0;1m[33m two numbers = "[31m$n(B[0m[32m;;[39m[42m [19;28H[49m(B[m[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[20d[?12l[?25h[?25l[21d[?12l[?25h[?25l[A[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l [?12l[?25h[?25l[1K *[?12l[?25h[?25l0[?12l[?25h[?25l [?12l[?25h[?25l[32m)[39m(B[m[?12l[?25h[?25le[?12l[?25h[?25lc[?12l[?25h[?25lh[?12l[?25h[?25l(B[0;1m[34mecho[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l "[?12l[?25h[?25lI[?12l[?25h[?25ln[?12l[?25h[?25lv[?12l[?25h[?25la[?12l[?25h[?25ll[?12l[?25h[?25li[?12l[?25h[?25ld[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l C[?12l[?25h[?25lh[?12l[?25h[?25lo[?12l[?25h[?25li[?12l[?25h[?25lc[?12l[?25h[?25le[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l [32m:[39m(B[m[?12l[?25h[?25l[32m;[39m(B[m[?12l[?25h[?25l[32m;[39m(B[m[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[42m [49m(B[m[K[?12l[?25h[?25l [?12l[?25h[?25l[20;15H(B[0;1m[33m"Invalid Choice"[39m(B[m[?12l[?25h[?25l[32m;[39m(B[m[?12l[?25h[?25l[32m;[39m(B[m[?12l[?25h[?25l[21d[?12l[?25h[?25le[?12l[?25h[?25ls[?12l[?25h[?25la[?12l[?25h[?25l[32mesac[39m(B[m[?12l[?25h[?25l7[2;22r8[22d[10S[1;24r[2;1H[K[12d[?12l[?25h[?25le[?12l[?25h[?25lc[?12l[?25h[?25lh[?12l[?25h[?25l(B[0;1m[34mecho[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l "[?12l[?25h[?25lD[?12l[?25h[?25lo[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l y[?12l[?25h[?25lo[?12l[?25h[?25lu[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l w[?12l[?25h[?25la[?12l[?25h[?25ln[?12l[?25h[?25lt[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l t[?12l[?25h[?25lo[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l c[?12l[?25h[?25lo[?12l[?25h[?25ln[?12l[?25h[?25lt[?12l[?25h[?25li[?12l[?25h[?25ln[?12l[?25h[?25lu[?12l[?25h[?25l[22G[32mcontinue[39m(B[m[?12l[?25h[?25l[32m![39m(B[m[?12l[?25h[?25l [?12l[?25h[?25l?[?12l[?25h[?25l[6G(B[0;1m[33m"Do you want to continue?"[39m(B[m[?12l[?25h[?25l[13d[?12l[?25h[?25lr[?12l[?25h[?25le[?12l[?25h[?25la[?12l[?25h[?25l[32mread[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l i[?12l[?25h[?25l[14d[?12l[?25h[?25li[?12l[?25h[?25l[32mif[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l [32m[[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l [32m$[39m(B[m[?12l[?25h[?25l(B[0;1m[31m$i[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l [32m![39m(B[m[?12l[?25h[?25l[32m=[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l "[?12l[?25h[?25ly[?12l[?25h[?25l(B[0;1m[33m"y"[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l [32m][39m(B[m[?12l[?25h[?25l[15d[?12l[?25h[?25lt[?12l[?25h[?25lh[?12l[?25h[?25le[?12l[?25h[?25l[32mthen[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[16d[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l    e[?12l[?25h[?25lx[?12l[?25h[?25li[?12l[?25h[?25l[32mexit[39m(B[m[?12l[?25h[?25l[17d[?12l[?25h[?25lf[?12l[?25h[?25l[32mfi[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l d[?12l[?25h[?25l[32mdo[39m(B[m[?12l[?25h[?25ldon[?12l[?25h[?25l[32mdone[39m(B[m[?12l[?25h[?25ldon[K[?12l[?25h[?25l[32mdo[39m(B[m[K[?12l[?25h[?25ld[K[?12l[?25h[?25l[42m [49m(B[m[K[?12l[?25h[?25l[18d[?12l[?25h[?25ld[?12l[?25h[?25l[32mdo[39m(B[m[?12l[?25h[?25ldon[?12l[?25h[?25l[32mdone[39m(B[m[?12l[?25h[?25l[A[?12l[?25h[?25l [?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l [?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[12d[?12l[?25h[?25l[A[?12l[?25h[?25l[C[?12l[?25h[?25l[A[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l*[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l [?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[A[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l [?12l[?25h[?25l[22d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)                   [23;1H Y(B[m Yes[K[24d(B[0;7m N(B[m No  [14G   (B[0;7m^C(B[m Cancel[K[22;63H[?12l[?25h[?25l[23d(B[0;7m^G(B[m Get Help[23;21H(B[0;7mM-D(B[m DOS Format[41G(B[0;7mM-A(B[m Append[23;61H(B[0;7mM-B(B[m Backup File[24d(B[0;7m^C(B[m Cancel[17G    (B[0;7mM-M(B[m Mac Format[41G(B[0;7mM-P(B[m Prepend[24;61H(B[0;7m^T(B[m To Files[22d(B[0;7mFile Name to Write: calculator.sh                            (B[m[22;34H[?12l[?25h[?25l[K[1;79H[1;71H(B[0;7m        (B[m[22;32H(B[0;7m[ Wrote 36 lines ](B[m[J[24;80H[?12l[?25h[24;1H[?1049l[23;0;0t[?1l>(base) ]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/0104[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/0104[00m$ nano calculator.shsudo ./system_config2.sh [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cchmod +x system_config2.ssh[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcalculator.sh
+(base) ]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/0104[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/0104[00m$ chmod +x calculator.sh[4Pnano[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo ./system_config2.sh [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P./system_config2.sh
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P./system_config2.sh[1P./system_config2.sh[1P./system_config2.sh[1P./system_config2.sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P.sh[1P.sh[1P.sh[1P.sh[1P.sh[1P.sh[1P.sh[1P.sh[1P.sh[1P.sh[1P.sh[1P.sh[1P.sh[1P.shc.sho.shn.shf.sh[1P.sh[1P.sh[1P.sha.shl.shc.shu.shl.sha.sht.sho.shr.sh
+[H[2J[3JEnter first number:
+6
+Enter second number:
+2
+
+-----MENU-----
+ 1.Addition
+ 2.Subtraction
+ 3.Multiplication
+ 4.Division
+Enter your choice:
+3
+Invalid Choice
+Do you want to continue?
+n
+(base) ]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/0104[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/0104[00m$ ./calculator.shchmod +x calculator.sh[4Pnano[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?1049h[22;0;0t[1;24r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[49m(B[m[H[2J[22;33H(B[0;7m[ Reading File ](B[m[22;32H(B[0;7m[ Read 36 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                    calculator.sh                               [1;79H(B[m[23d(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Uncut Text(B[0;7m^T(B[m To Linter (B[0;7m^_(B[m Go To Line[22d[3d[49m[36m#!/bin/bash[5d[39m(B[mclear[6dn[32m=[39m(B[m0[7di[32m=(B[0;1m[33m"y"[8d[34mecho[39m(B[m (B[0;1m[33m"Enter first number:"[9d(B[0m[32mread[39m(B[m n1[10d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Enter second number:"[11d(B[0m[32mread[39m(B[m  n2[12d[32mwhile[39m(B[m [32m[[39m(B[m (B[0;1m[31m$i[39m(B[m [32m=[39m(B[m (B[0;1m[33m"y"[39m(B[m [32m][13ddo[14d(B[0;1m[34mecho[39m(B[m [32m-e[39m(B[m (B[0;1m[33m"\n-----MENU-----"[15d[34mecho[39m(B[m (B[0;1m[33m" 1.Addition"[16d[34mecho[39m(B[m (B[0;1m[33m" 2.Subtraction"[17d[34mecho[39m(B[m (B[0;1m[33m" 3.Multiplication"[18d[34mecho[39m(B[m (B[0;1m[33m" 4.Division"[19d[34mecho[39m(B[m (B[0;1m[33m"Enter your choice:"[20d(B[0m[32mread[39m(B[m ch[21d[32mcase[39m(B[m (B[0;1m[31m$ch[39m(B[m [32min[39m[42m [3d[49m(B[m[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[19d[?12l[?25h[?25l[20d[?12l[?25h[?25l[21d[?12l[?25h[?25l7[3;21r8[10S[1;24r[12;8H1[32m)[39m(B[mn [32m=[39m(B[m [32m`[39m(B[mexpr (B[0;1m[31m$n1[39m(B[m + (B[0;1m[31m$n2(B[0m[32m`[13;10H(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Sum of two numbers = "[31m$n(B[0m[32m;;[14;8H[39m(B[m2[32m)[39m(B[mn [32m=[39m(B[m [32m`[39m(B[mexpr (B[0;1m[31m$n1[39m(B[m - (B[0;1m[31m$n2[15;10H[34mecho[39m(B[m (B[0;1m[33m"Difference between two numbers = "[31m$n(B[0m[32m;;[16;8H[39m(B[m3[32m)[39m(B[mn [32m=[39m(B[m [32m`[39m(B[mexpr (B[0;1m[31m$n1[39m(B[m * (B[0;1m[31m$n2(B[0m[32m`[17;10H(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Product of two numbers = "[31m$n(B[0m[32m;;[18;8H[39m(B[m4[32m)[39m(B[mn [32m=[39m(B[m [32m`[39m(B[mexpr (B[0;1m[31m$n1[39m(B[m / (B[0;1m[31m$n2[19;10H[34mecho[39m(B[m (B[0;1m[33m"Quotient of two numbers = "[31m$n(B[0m[32m;;[20;8H[39m(B[m*[32m)(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Invalid Choice"(B[0m[32m;;[21desac[12d[39m(B[m[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[22d[K[16;4H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l3[?12l[?25h[?25l[C[?12l[?25h[?25ln[?12l[?25h[?25l [?12l[?25h[?25l[C[?12l[?25h[?25l [?12l[?25h[?25l[C[?12l[?25h[?25le[?12l[?25h[?25lx[?12l[?25h[?25lp[?12l[?25h[?25lr[?12l[?25h[?25l [?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l [?12l[?25h[?25l[1;71H(B[0;7mModified(B[m[16;24H[32m\[39m(B[m* (B[0;1m[31m$n2(B[0m[32m`[25G[39m(B[m[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[19d[?12l[?25h[?25l[20d[?12l[?25h[?25l[21;5H[?12l[?25h[?25l7[3;22r8[22d[10S[1;24r[12;1H(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Do you want to continue?"[13d(B[0m[32mread[39m(B[m i[14d[32mif[39m(B[m [32m[[39m(B[m (B[0;1m[31m$i[39m(B[m [32m!=[39m(B[m (B[0;1m[33m"y"[39m(B[m [32m][15dthen[16dexit[17dfi[18ddone[12;25H[39m(B[m[?12l[?25h[?25l[22d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)                   [23;1H Y(B[m Yes[K[24d(B[0;7m N(B[m No  [14G   (B[0;7m^C(B[m Cancel[K[22;63H[?12l[?25h[?25l[23d(B[0;7m^G(B[m Get Help[23;21H(B[0;7mM-D(B[m DOS Format[41G(B[0;7mM-A(B[m Append[23;61H(B[0;7mM-B(B[m Backup File[24d(B[0;7m^C(B[m Cancel[17G    (B[0;7mM-M(B[m Mac Format[41G(B[0;7mM-P(B[m Prepend[24;61H(B[0;7m^T(B[m To Files[22d(B[0;7mFile Name to Write: calculator.sh                            (B[m[22;34H[?12l[?25h[?25l[K[1;79H[1;71H(B[0;7m        (B[m[22;32H(B[0;7m[ Wrote 36 lines ](B[m[J[24;80H[?12l[?25h[24;1H[?1049l[23;0;0t[?1l>(base) ]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/0104[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/0104[00m$ nano calculator.sh[3P./calculator.shchmod +x calculator.sh
+(base) ]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/0104[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/0104[00m$ chmod +x calculator.sh[4Pnano[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3P./calculator.sh
+[H[2J[3JEnter first number:
+6
+Enter second number:
+3 2
+
+-----MENU-----
+ 1.Addition
+ 2.Subtraction
+ 3.Multiplication
+ 4.Division
+Enter your choice:
+3
+Invalid Choice
+Do you want to continue?
+n
+(base) ]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/0104[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/0104[00m$ ./calculator.shchmod +x calculator.sh[4Pnano[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?1049h[22;0;0t[1;24r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[49m(B[m[H[2J[22;33H(B[0;7m[ Reading File ](B[m[22;32H(B[0;7m[ Read 36 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                    calculator.sh                               [1;79H(B[m[23d(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Uncut Text(B[0;7m^T(B[m To Linter (B[0;7m^_(B[m Go To Line[22d[3d[49m[36m#!/bin/bash[5d[39m(B[mclear[6dn[32m=[39m(B[m0[7di[32m=(B[0;1m[33m"y"[8d[34mecho[39m(B[m (B[0;1m[33m"Enter first number:"[9d(B[0m[32mread[39m(B[m n1[10d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Enter second number:"[11d(B[0m[32mread[39m(B[m  n2[12d[32mwhile[39m(B[m [32m[[39m(B[m (B[0;1m[31m$i[39m(B[m [32m=[39m(B[m (B[0;1m[33m"y"[39m(B[m [32m][13ddo[14d(B[0;1m[34mecho[39m(B[m [32m-e[39m(B[m (B[0;1m[33m"\n-----MENU-----"[15d[34mecho[39m(B[m (B[0;1m[33m" 1.Addition"[16d[34mecho[39m(B[m (B[0;1m[33m" 2.Subtraction"[17d[34mecho[39m(B[m (B[0;1m[33m" 3.Multiplication"[18d[34mecho[39m(B[m (B[0;1m[33m" 4.Division"[19d[34mecho[39m(B[m (B[0;1m[33m"Enter your choice:"[20d(B[0m[32mread[39m(B[m ch[21d[32mcase[39m(B[m (B[0;1m[31m$ch[39m(B[m [32min[39m[42m [3d[49m(B[m[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[19d[?12l[?25h[?25l[20d[?12l[?25h[?25l[A[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l [?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[22d[K[19;7H[?12l[?25h[?25l[1;71H(B[0;7mModified(B[m[19;7H(B[0;1m[33m Enter your choice:"[8G[39m(B[m[?12l[?25h[?25l[20d[?12l[?25h[?25l[21d[?12l[?25h[?25l7[3;22r8[22d[10S[1;24r[12;8H1[32m)[39m(B[mn [32m=[39m(B[m [32m`[39m(B[mexpr (B[0;1m[31m$n1[39m(B[m + (B[0;1m[31m$n2(B[0m[32m`[13;10H(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Sum of two numbers = "[31m$n(B[0m[32m;;[14;8H[39m(B[m2[32m)[39m(B[mn [32m=[39m(B[m [32m`[39m(B[mexpr (B[0;1m[31m$n1[39m(B[m - (B[0;1m[31m$n2[15;10H[34mecho[39m(B[m (B[0;1m[33m"Difference between two numbers = "[31m$n(B[0m[32m;;[16;8H[39m(B[m3[32m)[39m(B[mn [32m=[39m(B[m [32m`[39m(B[mexpr (B[0;1m[31m$n1[39m(B[m [32m\[39m(B[m* (B[0;1m[31m$n2(B[0m[32m`[17;10H(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Product of two numbers = "[31m$n(B[0m[32m;;[18;8H[39m(B[m4[32m)[39m(B[mn [32m=[39m(B[m [32m`[39m(B[mexpr (B[0;1m[31m$n1[39m(B[m / (B[0;1m[31m$n2[19;10H[34mecho[39m(B[m (B[0;1m[33m"Quotient of two numbers = "[31m$n(B[0m[32m;;[20;8H[39m(B[m*[32m)(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Invalid Choice"(B[0m[32m;;[21desac[12;8H[39m(B[m[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[19d[?12l[?25h[?25l[20d[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l4[?12l[?25h[?25l[C[?12l[?25h[?25ln[?12l[?25h[?25l [?12l[?25h[?25l[C[?12l[?25h[?25l [?12l[?25h[?25l[C[?12l[?25h[?25le[?12l[?25h[?25lx[?12l[?25h[?25lp[?12l[?25h[?25lr[?12l[?25h[?25l [?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l [?12l[?25h[?25l/[?12l[?25h[?25l [?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[32m;[39m(B[m[?12l[?25h[?25l [?12l[?25h[?25l'[?12l[?25h[?25l [?12l[?25h[?25l[32m`[39m(B[m[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[22d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)                   [23;1H Y(B[m Yes[K[24d(B[0;7m N(B[m No  [14G   (B[0;7m^C(B[m Cancel[K[22;63H[?12l[?25h[?25l[23d(B[0;7m^G(B[m Get Help[23;21H(B[0;7mM-D(B[m DOS Format[41G(B[0;7mM-A(B[m Append[23;61H(B[0;7mM-B(B[m Backup File[24d(B[0;7m^C(B[m Cancel[17G    (B[0;7mM-M(B[m Mac Format[41G(B[0;7mM-P(B[m Prepend[24;61H(B[0;7m^T(B[m To Files[22d(B[0;7mFile Name to Write: calculator.sh                            (B[m[22;34H[?12l[?25h[?25l[K[1;79H[1;71H(B[0;7m        (B[m[22;32H(B[0;7m[ Wrote 36 lines ](B[m[J[24;80H[?12l[?25h[24;1H[?1049l[23;0;0t[?1l>(base) ]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/0104[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/0104[00m$ nano calculator.sh[3P./calculator.shchmod +x calculator.sh
+(base) ]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/0104[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/0104[00m$ chmod +x calculator.sh[4Pnano[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3P./calculator.sh
+[H[2J[3JEnter first number:
+6
+Enter second number:
+2
+./calculator.sh: line 26: unexpected EOF while looking for matching ``'
+./calculator.sh: line 37: syntax error: unexpected end of file
+(base) ]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/0104[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/0104[00m$ ./calculator.shchmod +x calculator.sh[4Pnano[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?1049h[22;0;0t[1;24r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[49m(B[m[H[2J[22;33H(B[0;7m[ Reading File ](B[m[22;32H(B[0;7m[ Read 36 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                    calculator.sh                               [1;79H(B[m[23d(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Uncut Text(B[0;7m^T(B[m To Linter (B[0;7m^_(B[m Go To Line[22d[3d[49m[36m#!/bin/bash[5d[39m(B[mclear[6dn[32m=[39m(B[m0[7di[32m=(B[0;1m[33m"y"[8d[34mecho[39m(B[m (B[0;1m[33m"Enter first number:"[9d(B[0m[32mread[39m(B[m n1[10d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Enter second number:"[11d(B[0m[32mread[39m(B[m  n2[12d[32mwhile[39m(B[m [32m[[39m(B[m (B[0;1m[31m$i[39m(B[m [32m=[39m(B[m (B[0;1m[33m"y"[39m(B[m [32m][13ddo[14d(B[0;1m[34mecho[39m(B[m [32m-e[39m(B[m (B[0;1m[33m"\n-----MENU-----"[15d[34mecho[39m(B[m (B[0;1m[33m" 1.Addition"[16d[34mecho[39m(B[m (B[0;1m[33m" 2.Subtraction"[17d[34mecho[39m(B[m (B[0;1m[33m" 3.Multiplication"[18d[34mecho[39m(B[m (B[0;1m[33m" 4.Division"[19d[34mecho[39m(B[m (B[0;1m[33m" Enter your choice:"[20d(B[0m[32mread[39m(B[m ch[21d[32mcase[39m(B[m (B[0;1m[31m$ch[39m(B[m [32min[39m[42m [3d[49m(B[m[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[19d[?12l[?25h[?25l[20d[?12l[?25h[?25l[21d[?12l[?25h[?25l7[3;21r8[10S[1;24r[12;8H1[32m)[39m(B[mn [32m=[39m(B[m [32m`[39m(B[mexpr (B[0;1m[31m$n1[39m(B[m + (B[0;1m[31m$n2(B[0m[32m`[13;10H(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Sum of two numbers = "[31m$n(B[0m[32m;;[14;8H[39m(B[m2[32m)[39m(B[mn [32m=[39m(B[m [32m`[39m(B[mexpr (B[0;1m[31m$n1[39m(B[m - (B[0;1m[31m$n2[15;10H[34mecho[39m(B[m (B[0;1m[33m"Difference between two numbers = "[31m$n(B[0m[32m;;[16;8H[39m(B[m3[32m)[39m(B[mn [32m=[39m(B[m [32m`[39m(B[mexpr (B[0;1m[31m$n1[39m(B[m [32m\[39m(B[m* (B[0;1m[31m$n2(B[0m[32m`[17;10H(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Product of two numbers = "[31m$n(B[0m[32m;;[18;8H[39m(B[m4[32m)[39m(B[mn [32m=[39m(B[m [32m`[39m(B[mexpr (B[0;1m[31m$n1[39m(B[m / (B[0;1m[31m$n2(B[0m[32m`[19;10H(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Quotient of two numbers = "[31m$n(B[0m[32m;;[20;8H[39m(B[m*[32m)(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Invalid Choice"(B[0m[32m;;[21desac[12d[39m(B[m[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[22d[K[16;4H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l3[?12l[?25h[?25l[C[?12l[?25h[?25ln[?12l[?25h[?25l [?12l[?25h[?25l[C[?12l[?25h[?25l [?12l[?25h[?25l[C[?12l[?25h[?25le[?12l[?25h[?25lx[?12l[?25h[?25lp[?12l[?25h[?25lr[?12l[?25h[?25l [?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l [?12l[?25h[?25l-[?12l[?25h[?25l [?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[1;71H(B[0;7mModified(B[m[14;29H[32m`[39m(B[m[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[1P[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[22d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)                   [23;1H Y(B[m Yes[K[24d(B[0;7m N(B[m No  [14G   (B[0;7m^C(B[m Cancel[K[22;63H[?12l[?25h[?25l[23d(B[0;7m^G(B[m Get Help[23;21H(B[0;7mM-D(B[m DOS Format[41G(B[0;7mM-A(B[m Append[23;61H(B[0;7mM-B(B[m Backup File[24d(B[0;7m^C(B[m Cancel[17G    (B[0;7mM-M(B[m Mac Format[41G(B[0;7mM-P(B[m Prepend[24;61H(B[0;7m^T(B[m To Files[22d(B[0;7mFile Name to Write: calculator.sh                            (B[m[22;34H[?12l[?25h[?25l[K[1;79H[1;71H(B[0;7m        (B[m[22;32H(B[0;7m[ Wrote 36 lines ](B[m[J[24;80H[?12l[?25h[24;1H[?1049l[23;0;0t[?1l>(base) ]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/0104[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/0104[00m$ nano calculator.sh[3P./calculator.shchmod +x calculator.sh
+(base) ]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/0104[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/0104[00m$ chmod +x calculator.sh[4Pnano[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3P./calculator.sh
+[H[2J[3JEnter first number:
+6
+Enter second number:
+2
+
+-----MENU-----
+ 1.Addition
+ 2.Subtraction
+ 3.Multiplication
+ 4.Division
+ Enter your choice:
+3
+expr: syntax error
+./calculator.sh: line 24: n: command not found
+Product of two numbers = 0
+Do you want to continue?
+^[[A^[[A        n
+(base) ]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/0104[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/0104[00m$ ./calculator.shchmod +x calculator.sh[4Pnano[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?1049h[22;0;0t[1;24r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[49m(B[m[H[2J[22;33H(B[0;7m[ Reading File ](B[m[22;32H(B[0;7m[ Read 36 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                    calculator.sh                               [1;79H(B[m[23d(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Uncut Text(B[0;7m^T(B[m To Linter (B[0;7m^_(B[m Go To Line[22d[3d[49m[36m#!/bin/bash[5d[39m(B[mclear[6dn[32m=[39m(B[m0[7di[32m=(B[0;1m[33m"y"[8d[34mecho[39m(B[m (B[0;1m[33m"Enter first number:"[9d(B[0m[32mread[39m(B[m n1[10d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Enter second number:"[11d(B[0m[32mread[39m(B[m  n2[12d[32mwhile[39m(B[m [32m[[39m(B[m (B[0;1m[31m$i[39m(B[m [32m=[39m(B[m (B[0;1m[33m"y"[39m(B[m [32m][13ddo[14d(B[0;1m[34mecho[39m(B[m [32m-e[39m(B[m (B[0;1m[33m"\n-----MENU-----"[15d[34mecho[39m(B[m (B[0;1m[33m" 1.Addition"[16d[34mecho[39m(B[m (B[0;1m[33m" 2.Subtraction"[17d[34mecho[39m(B[m (B[0;1m[33m" 3.Multiplication"[18d[34mecho[39m(B[m (B[0;1m[33m" 4.Division"[19d[34mecho[39m(B[m (B[0;1m[33m" Enter your choice:"[20d(B[0m[32mread[39m(B[m ch[21d[32mcase[39m(B[m (B[0;1m[31m$ch[39m(B[m [32min[39m[42m [3d[49m(B[m[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[19d[?12l[?25h[?25l[20d[?12l[?25h[?25l[21d[?12l[?25h[?25l7[3;21r8[10S[1;24r[12;8H1[32m)[39m(B[mn [32m=[39m(B[m [32m`[39m(B[mexpr (B[0;1m[31m$n1[39m(B[m + (B[0;1m[31m$n2(B[0m[32m`[13;10H(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Sum of two numbers = "[31m$n(B[0m[32m;;[14;8H[39m(B[m2[32m)[39m(B[mn [32m=[39m(B[m [32m`[39m(B[mexpr (B[0;1m[31m$n1[39m(B[m - (B[0;1m[31m$n2(B[0m[32m`[15;10H(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Difference between two numbers = "[31m$n(B[0m[32m;;[16;8H[39m(B[m3[32m)[39m(B[mn [32m=[39m(B[m [32m`[39m(B[mexpr (B[0;1m[31m$n1[39m(B[m * (B[0;1m[31m$n2(B[0m[32m`[17;10H(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Product of two numbers = "[31m$n(B[0m[32m;;[18;8H[39m(B[m4[32m)[39m(B[mn [32m=[39m(B[m [32m`[39m(B[mexpr (B[0;1m[31m$n1[39m(B[m / (B[0;1m[31m$n2(B[0m[32m`[19;10H(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Quotient of two numbers = "[31m$n(B[0m[32m;;[20;8H[39m(B[m*[32m)(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Invalid Choice"(B[0m[32m;;[21desac[12d[39m(B[m[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[22d[K[14;6H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l2[?12l[?25h[?25l[C[?12l[?25h[?25ln[?12l[?25h[?25l [?12l[?25h[?25l[C[?12l[?25h[?25l [?12l[?25h[?25l[C[?12l[?25h[?25le[?12l[?25h[?25lx[?12l[?25h[?25lp[?12l[?25h[?25lr[?12l[?25h[?25l[15d[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[16d[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l [?12l[?25h[?25l[1;71H(B[0;7mModified(B[m[16;24H[32m\[39m(B[m* (B[0;1m[31m$n2(B[0m[32m`[25G[39m(B[m[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[19d[?12l[?25h[?25l[20d[?12l[?25h[?25l[21;5H[?12l[?25h[?25l[22d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)                   [23;1H Y(B[m Yes[K[24d(B[0;7m N(B[m No  [14G   (B[0;7m^C(B[m Cancel[K[22;63H[?12l[?25h[?25l[23d(B[0;7m^G(B[m Get Help[23;21H(B[0;7mM-D(B[m DOS Format[41G(B[0;7mM-A(B[m Append[23;61H(B[0;7mM-B(B[m Backup File[24d(B[0;7m^C(B[m Cancel[17G    (B[0;7mM-M(B[m Mac Format[41G(B[0;7mM-P(B[m Prepend[24;61H(B[0;7m^T(B[m To Files[22d(B[0;7mFile Name to Write: calculator.sh                            (B[m[22;34H[?12l[?25h[?25l[K[1;79H[1;71H(B[0;7m        (B[m[22;32H(B[0;7m[ Wrote 36 lines ](B[m[J[24;80H[?12l[?25h[24;1H[?1049l[23;0;0t[?1l>(base) ]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/0104[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/0104[00m$ nano calculator.sh[3P./calculator.shchmod +x calculator.sh
+(base) ]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/0104[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/0104[00m$ chmod +x calculator.sh[4Pnano[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3P./calculator.sh
+[H[2J[3JEnter first number:
+6
+Enter second number:
+2
+
+-----MENU-----
+ 1.Addition
+ 2.Subtraction
+ 3.Multiplication
+ 4.Division
+ Enter your choice:
+1
+./calculator.sh: line 20: n: command not found
+Sum of two numbers = 0
+Do you want to continue?
+n
+(base) ]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/0104[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/0104[00m$ ./calculator.shchmod +x calculator.sh[4Pnano[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?1049h[22;0;0t[1;24r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[22;33H(B[0;7m[ Reading File ](B[m[22;32H(B[0;7m[ Read 36 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                    calculator.sh                               [1;79H(B[m[23d(B[0;7m^G(B[m Get Help  (B[0;7m^O(B[m Write Out (B[0;7m^W(B[m Where Is  (B[0;7m^K(B[m Cut Text  (B[0;7m^J(B[m Justify   (B[0;7m^C(B[m Cur Pos[24d(B[0;7m^X(B[m Exit[14G(B[0;7m^R(B[m Read File (B[0;7m^\(B[m Replace   (B[0;7m^U(B[m Uncut Text(B[0;7m^T(B[m To Linter (B[0;7m^_(B[m Go To Line[22d[3d[39;49m[36m#!/bin/bash[5d[39m(B[mclear[6dn[32m=[39m(B[m0[7di[32m=(B[0;1m[33m"y"[8d[34mecho[39m(B[m (B[0;1m[33m"Enter first number:"[9d(B[0m[32mread[39m(B[m n1[10d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Enter second number:"[11d(B[0m[32mread[39m(B[m  n2[12d[32mwhile[39m(B[m [32m[[39m(B[m (B[0;1m[31m$i[39m(B[m [32m=[39m(B[m (B[0;1m[33m"y"[39m(B[m [32m][13ddo[14d(B[0;1m[34mecho[39m(B[m [32m-e[39m(B[m (B[0;1m[33m"\n-----MENU-----"[15d[34mecho[39m(B[m (B[0;1m[33m" 1.Addition"[16d[34mecho[39m(B[m (B[0;1m[33m" 2.Subtraction"[17d[34mecho[39m(B[m (B[0;1m[33m" 3.Multiplication"[18d[34mecho[39m(B[m (B[0;1m[33m" 4.Division"[19d[34mecho[39m(B[m (B[0;1m[33m" Enter your choice:"[20d(B[0m[32mread[39m(B[m ch[21d[32mcase[39m(B[m (B[0;1m[31m$ch[39m(B[m [32min[39m[42m [3d[49m(B[m[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[C[?12l[?25h[?25l[A[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[1;71H(B[0;7mModified(B[m[11;5H n2[K[?12l[?25h[?25l[12d[?12l[?25h[?25l[13;3H[?12l[?25h[?25l[14;6H[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[19d[?12l[?25h[?25l[22d[K[20;6H[?12l[?25h[?25l[21d[?12l[?25h[?25l7[3;22r8[22d[10S[1;24r[12;8H1[32m)[39m(B[mn [32m=[39m(B[m [32m`[39m(B[mexpr (B[0;1m[31m$n1[39m(B[m + (B[0;1m[31m$n2(B[0m[32m`[13;10H(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Sum of two numbers = "[31m$n(B[0m[32m;;[14;8H[39m(B[m2[32m)[39m(B[mn [32m=[39m(B[m [32m`[39m(B[mexpr (B[0;1m[31m$n1[39m(B[m - (B[0;1m[31m$n2(B[0m[32m`[15;10H(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Difference between two numbers = "[31m$n(B[0m[32m;;[16;8H[39m(B[m3[32m)[39m(B[mn [32m=[39m(B[m [32m`[39m(B[mexpr (B[0;1m[31m$n1[39m(B[m [32m\[39m(B[m* (B[0;1m[31m$n2(B[0m[32m`[17;10H(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Product of two numbers = "[31m$n(B[0m[32m;;[18;8H[39m(B[m4[32m)[39m(B[mn [32m=[39m(B[m [32m`[39m(B[mexpr (B[0;1m[31m$n1[39m(B[m / (B[0;1m[31m$n2(B[0m[32m`[19;10H(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Quotient of two numbers = "[31m$n(B[0m[32m;;[20;8H[39m(B[m*[32m)(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Invalid Choice"(B[0m[32m;;[21desac[12;6H[39m(B[m[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l1[?12l[?25h[?25l[C[?12l[?25h[?25ln[?12l[?25h[?25l [?12l[?25h[?25l[C[?12l[?25h[?25l [?12l[?25h[?25l[C[?12l[?25h[?25le[?12l[?25h[?25lx[?12l[?25h[?25l[13d[?12l[?25h[?25l[A[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[1P[?12l[?25h[?25l[13d[?12l[?25h[?25l[?12l[?25h[?25l[A[?12l[?25h[?25l[1P[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l [?12l[?25h[?25l[1P[?12l[?25h[?25l[C[?12l[?25h[?25l [?12l[?25h[?25l[1P[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[1P[?12l[?25h[?25l[C[?12l[?25h[?25l [?12l[?25h[?25l[1P[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[?12l[?25h[?25l [?12l[?25h[?25l[1P[?12l[?25h[?25l[C[?12l[?25h[?25l [?12l[?25h[?25l[1P[?12l[?25h[?25l[19d[?12l[?25h[?25l[20d[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[19d[?12l[?25h[?25l[20d[?12l[?25h[?25l[21;5H[?12l[?25h[?25l7[3;22r8[22d[10S[1;24r[12;1H(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Do you want to continue?"[13d(B[0m[32mread[39m(B[m i[14d[32mif[39m(B[m [32m[[39m(B[m (B[0;1m[31m$i[39m(B[m [32m!=[39m(B[m (B[0;1m[33m"y"[39m(B[m [32m][15dthen[16dexit[17dfi[18ddone[12;12H[39m(B[m[?12l[?25h[?25l[13;7H[?12l[?25h[?25l[22d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)                   [23;1H Y(B[m Yes[K[24d(B[0;7m N(B[m No  [14G   (B[0;7m^C(B[m Cancel[K[22;63H[?12l[?25h[?25l[23d(B[0;7m^G(B[m Get Help[23;21H(B[0;7mM-D(B[m DOS Format[41G(B[0;7mM-A(B[m Append[23;61H(B[0;7mM-B(B[m Backup File[24d(B[0;7m^C(B[m Cancel[17G    (B[0;7mM-M(B[m Mac Format[41G(B[0;7mM-P(B[m Prepend[24;61H(B[0;7m^T(B[m To Files[22d(B[0;7mFile Name to Write: calculator.sh                            (B[m[22;34H[?12l[?25h[?25l[K[1;79H[1;71H(B[0;7m        (B[m[22;32H(B[0;7m[ Wrote 36 lines ](B[m[J[24;80H[?12l[?25h[24;1H[?1049l[23;0;0t[?1l>(base) ]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/0104[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/0104[00m$ nano calculator.sh[3P./calculator.shchmod +x calculator.sh
+(base) ]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/0104[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/0104[00m$ chmod +x calculator.sh[4Pnano[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3P./calculator.sh
+[H[2J[3JEnter first number:
+6
+Enter second number:
+2
+
+-----MENU-----
+ 1.Addition
+ 2.Subtraction
+ 3.Multiplication
+ 4.Division
+ Enter your choice:
+1
+Sum of two numbers = 8
+Do you want to continue?
+^[[A    y
+
+-----MENU-----
+ 1.Addition
+ 2.Subtraction
+ 3.Multiplication
+ 4.Division
+ Enter your choice:
+2
+Difference between two numbers = 4
+Do you want to continue?
+3
+(base) ]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/0104[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/0104[00m$ ./calculator.shchmod +x calculator.sh[4Pnano[C[C[C[C[C[C[C[C[C[C[C[C[C[C[4@chmod +x[C[C[C[C[C[C[C[C[C[C[C[C[C[C[7P./calculator.sh
+[H[2J[3JEnter first number:
+6
+Enter second number:
+2
+
+-----MENU-----
+ 1.Addition
+ 2.Subtraction
+ 3.Multiplication
+ 4.Division
+ Enter your choice:
+1
+Sum of two numbers = 8
+Do you want to continue?
+y
+
+-----MENU-----
+ 1.Addition
+ 2.Subtraction
+ 3.Multiplication
+ 4.Division
+ Enter your choice:
+2
+Difference between two numbers = 4
+Do you want to continue?
+y
+
+-----MENU-----
+ 1.Addition
+ 2.Subtraction
+ 3.Multiplication
+ 4.Division
+ Enter your choice:
+3
+Product of two numbers = 12
+Do you want to continue?
+y
+
+-----MENU-----
+ 1.Addition
+ 2.Subtraction
+ 3.Multiplication
+ 4.Division
+ Enter your choice:
+4
+Quotient of two numbers = 3
+Do you want to continue?
+y n
+(base) ]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/0104[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/0104[00m$ gedit report.txt
+(base) ]0;george@george-HP-Laptop-15-bs0xx: ~/fosslab/0104[01;32mgeorge@george-HP-Laptop-15-bs0xx[00m:[01;34m~/fosslab/0104[00m$ exit
+exit
+
+Script done on 2020-04-01 21:04:06+0530

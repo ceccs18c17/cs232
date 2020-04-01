@@ -1,0 +1,67 @@
+CEC CS 18 017
+George Mani
+
+--------------------------------
+#1: Aim/task: Shell programming (s4)
+---------------------------------
+Command/Shell script/Program name
+---------------------------------
+
+        # system_config1.sh
+
+--------------------------------
+Output:
+            
+        $ Currently logged user and his login 
+        $ Current shell
+        $ Home directory
+        $ Operating system type
+        $ Current path setting
+        $ Current working directory
+        $ Number of users currently logged in
+
+
+
+-------------------------------------
+#2: Aim/task: Shell programming (s5)
+-------------------------------------
+Command/Shell script/Program name:
+-------------------------------------
+
+        # system_config2.sh
+
+-----------------------------------
+Output: 
+
+       
+        $ OS and version, release number, kernel version
+        $ All available shells
+        $ Computer CPU information like processor type, speed etc
+        $ Memory information
+        $ Hard disk information like size of hard-disk, cache memory, model etc
+        $ File system (Mounted)
+
+
+
+------------------------------------
+#3: Aim/task: Menu Driven Calculator (s6)
+------------------------------------
+Command/Shell script/Program name:
+------------------------------------
+    
+        # calculator.sh
+
+------------------------------------
+Output:
+
+        $ Screenshot of output is attached - output.png
+
+
+
+------------------------------------ 
+
+       
+
+
+
+
