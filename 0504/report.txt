@@ -1,0 +1,54 @@
+CEC CS 18 017 (05-04-2020)
+George Mani
+
+Public ip: 137.97.148.75
+--------------------------------
+#1: Aim/task : COVID 19 Data Visualization
+---------------------------------
+Command/Shell script/Program name:
+--------------------------------
+      
+       # pip3 install -r requirements.txt
+     
+       # python Corona.py
+
+Input:
+---------------
+       
+
+       # Data Sources: $ http://dhs.kerala.gov.in/public-health-2019-n-corona-virus/
+                       $ https://en.wikipedia.org/wiki/2020_coronavirus_pandemic_in_Kerala
+                       $ https://en.wikipedia.org/wiki/2020_coronavirus_pandemic_in_India
+                       $ https://www.mohfw.gov.in/
+
+       
+       
+       # india.csv - Contain date wise record of total coronavirus cases reported in India
+       # kerala.csv - Contain date wise record of total coronavirus cases reported in Kerala
+       # states.csv - Contains date wise record of state wise coronavirus cases reported in India
+       # districts.csv - Contains date wise record of district wise coronavirus cases reported in Kerala 
+
+--------------------------------
+Output:
+      
+       # Generated outputs : 
+                 $ india.png -  Plot of total Coronavirus cases reported in India 
+                 $ states.png - Plot of state wise Coronavirus cases reported in India
+                 $ kerala.png -  Plot of total Coronavirus cases reported in Kerala
+                 $ districts.png - Plot of district wise Coronavirus cases reported in Kerala
+                   
+                           
+       
+
+
+-------------------
+Remarks if any:
+   
+       
+
+
+
+
+
+-------------------------------------
+-------------------------------------
